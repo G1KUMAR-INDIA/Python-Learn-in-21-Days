@@ -1,0 +1,4 @@
+Day 12: File Handling
+* Reading from and writing to files
+* Context manager (with statement)
+

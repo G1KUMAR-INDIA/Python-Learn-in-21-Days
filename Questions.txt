@@ -1,0 +1,22 @@
+What is Interpreted and Compiler and its based Languages? 
+
+What is OOPs based Language?
+
+What is Memory Management in General and Python?
+
+What is Stack and Heap Memory?
+
+What is Garbage Collector in Python?
+
+What is File Handling?
+
+What is with Statement?
+
+
+
+What is Mutable and Immutable data type?
+
+What is Positional and Keyword Orguments?
+
+
+

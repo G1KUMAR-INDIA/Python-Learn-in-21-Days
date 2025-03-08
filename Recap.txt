@@ -1,0 +1,155 @@
+Python:
+Python is powerful, Object Oriented, Interpreted and General purpose Programming language.
+Python was Developed by Guido Van Rossum in 1989(Netherland). To the public 1991.
+It was Developed by taking the different language features.
+1.Procedure Oriented Programming language->C
+2.Object Oriented Programming language->C++,Java
+3.Scripting language->Shell script,Perl
+4.Modular Programming language->Module-3
+Why Python?
+* Simple Syntax
+* Less Code
+* Solve Complex problems very easily.
+Why is Python?
+Instead of Java(1994), .NET, C#, Ruby and r, Why we choose Python(1991).
+All IT Industries are established after 1990. Java is more secure Compare to other languages.
+IT Industries like Wipro, Amazon, Microsoft, Facebook, Google,Satyam,TCS etc
+DATA is played major role in IT Industry. Data will give
+1.Decision Making,
+2.Customer Insights,
+3.Innovations.
+Maintaining this Data is very important in IT Industry.
+Python is have very strong base with rich libraries to maintain this data compare to other languages. Libraries will help for mathematical operations.
+Python Libraries for Machine Learning, Deep Learning and NLP/Computer Vision playing very strong role compare to other language libraries.
+Key Companies Revolutionising Data Management and Analytics
+1.IBM->Data Management and Analytics.
+2.Microsoft->Data Storages like SQL Server, Azure, Oracle also with SQL
+3.Google->BigQuery,Tensorflow and AI
+4.Amazon->AWS S3, RedShift to data storage.
+5.Palantir->Advanced data Analytics tools.
+6.Databricks->BigData and Ml using Apache Spark, PySpark
+
+Data Management Key Libraries:
+Numpy: High Performance and Numerical Computation
+Pandas: Data Manipulation and Analytics
+Matplotlib/Seaborn: Data Visualisation
+Scikit-learn: Machine Learning
+Tensorflow/Pytorch:Deep Learning
+
+Job Roles Based on Python
+1.Full Stack Development using Python Developer
+2.Data Analytics->Analyse Data and Generate Reports from Structure Data.
+3.Data Science->Prediction will give on Reports and give Suggestions For Development.
+4.Data Engineering->Unstructure Data to Structure Data
+Data Engineer->Data Analysit->Data Scientist
+
+High Level Language vs Low Level Language
+High Level Language: This is Language(General English) that human can understand.
+It is used in Web Development, Data Analytics, AI and ML.
+Low Level Language: This is Language(Binary) which can understand by  Machine.
+It is used in OS and Embedded System.
+The Medium which converts HLL to LLL and viceversa is called Interpretor in Python.
+
+Bit and Bytes
+Bit: Smallest unit of Data in Computing.
+Byte: A collection of 8 bits is called Byte.
+
+Interpreter vs Compiler
+Interpreter : Python, Javascript, PHP are Interpreter based Language . It is line by line execution
+Compiler : C, C++, Java, .Net
+
+Source Code/Program->Interpreter[Python Compiler->Byte Code->Virtual Machine]->Binary Code/Machine Code->Output
+
+Virtual Machine: A Virtual Machine (VM) in Python refers to the Python Virtual Machine (PVM), which is responsible for executing the compiled bytecode (.pyc files) of Python programs. It interprets and runs the bytecode instructions line by line.
+
+Features of Python:
+* Platform Independent.
+* No Data Type Declaration.
+* Extensive Libraries(built in functions)
+* Free and Open Source
+* Extensibility + security(C,C++)
+* Simple and easy to learn
+* Supports portability
+* General Purpose language
+* Scripting language
+* High Level language
+* Interpreted language
+* Dynamically typed Language
+* Supports Procedure Oriented & Object Oriented
+* Case Sensitive.
+General Purpose language:
+-> Python can be used to create a variety of programs
+-> And it not specialized for any specific problems
+-> Used in almost every domain
+
+High Level language:
+->  A high-level language is any programming language that enables Development of a 
+    program in a much more user-friendly programming context and is generally Independent
+    of the Computer's hardware architecture.
+
+Scripting Language:
+* Python uses an Interpreter to translate its source code.
+* The Interpreter reads and executes each line of code one at a time.
+* That's why termed as a Scripting language.
+
+Dynamically typed Language:
+* The Type of the variables is determined only only during runtime.
+* Not necessary to declare the type of variables when assigning a value to it.
+
+Applications of Python:
+* Web based Applications
+* GUI Applications
+* Artificial Intelligence
+* Machine Learning, Deep Learning, NLP, Computer Vision.
+* Enterprise Applications
+* Image Processing & 3D CAD
+* Automation
+* Scientific & Gaming Applications
+* Audio & Video based Applications
+
+Why Python so Popular?
+* Simple Syntax
+* Versatile
+* Beginner friendly
+* Scalable
+* Speed of Development is so fast.
+* Modules and libraries
+* Large and active community
+
+Python Popular Interfaces:
+* IDLE- Integrated Development Environment
+* PyCharm
+* Visual Studio Code
+* Jupyter
+* Sublime
+* Atom
+* Spyder
+
+Python Popular Framework and Libraries:
+* Web Framework: Django and Flask
+* Data Analytics and Data Visualisation
+    1.Numpy
+    2.Pandas
+    3.Matplotlib
+    4.Seaborn
+
+Python Libraries:
+* Machine Learning, Deep Learning, NLP and Computer Vision
+    1.Scikit-learn
+    2.Keras
+    3.Pytorch
+    4.NLTK-Natural Language Toolkit
+    5.Spacy
+    6.Scipy
+* Desktop GUI: PyQt, PyGtk, PyGUI
+
+Required Softwares:
+    Python 
+    Pycharm community Edition
+    VS Code
+
+Python Installation check :
+
+python --version
+
+
