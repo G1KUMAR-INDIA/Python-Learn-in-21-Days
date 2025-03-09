@@ -12,11 +12,13 @@ What is File Handling?
 
 What is with Statement?
 
-
-
 What is Mutable and Immutable data type?
 
 What is Positional and Keyword Orguments?
+
+What is Operators?
+
+
 
 
 
