@@ -18,6 +18,16 @@ What is Positional and Keyword Orguments?
 
 What is Operators?
 
+What is Object Oriented Programs? What is purpose of it?
+
+What is class and object? differentiate it?
+
+
+
+
+
+
+
 
 
 

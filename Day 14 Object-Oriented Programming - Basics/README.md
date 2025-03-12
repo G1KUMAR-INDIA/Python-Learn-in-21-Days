@@ -43,11 +43,13 @@ car2.display_info()  # Output: Car: Honda Civic, Year: 2021
 ### Example Demonstrating Instance Variables and Methods:
 ```python
 class Student:
+    # Constructor
     def __init__(self, name, age, grade):
+        # Instance Variables
         self.name = name  # Instance variable
         self.age = age    # Instance variable
         self.grade = grade  # Instance variable
-    
+    # Instance methods
     def introduce(self):  # Instance method
         print(f"Hello, my name is {self.name}. I am {self.age} years old and in grade {self.grade}.")
 
