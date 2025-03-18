@@ -2,6 +2,7 @@
 - **Classes and objects**
 - **Instance variables and methods**
 
+## Programming LanguagesP C,C++,Java,.Net,C#
 # Object-Oriented Programming (OOP) - Basics
 
 Object-Oriented Programming (OOP) is a programming paradigm that organizes code into objects, making it more modular, reusable, and easier to manage. It revolves around the concept of classes and objects, allowing developers to structure their programs efficiently. This blog explores the fundamental concepts of OOP, focusing on classes, objects, instance variables, and methods.

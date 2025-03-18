@@ -20,7 +20,25 @@ What is Operators?
 
 What is Object Oriented Programs? What is purpose of it?
 
-What is class and object? differentiate it?
+What is class, object and method? differentiate it?
+
+what are instance variables? What is Instance Method?
+
+what are static variables? What is static Method?
+
+What is constructor?how to create it?
+
+What are class level variable?
+
+what are the four pillars of OOPs?
+
+What is inheritance?List out its types?
+
+What is Public, Private and Protected access Modifiers?
+
+What is Abstraction Class? 
+
+What is Polymorphism?
 
 
 
@@ -31,4 +49,74 @@ What is class and object? differentiate it?
 
 
 
+### ✅ **What is Object-Oriented Programming (OOP)?**
+Object-Oriented Programming is a programming paradigm based on the concept of **"objects"**, which contain **data (attributes/variables)** and **code (methods/functions)**.
+
+### 🎯 **Purpose of OOP:**
+- To model real-world entities.
+- To promote **modularity, reusability, and scalability**.
+- Makes code more **structured and manageable**.
+- Helps in **data encapsulation**, **inheritance**, **polymorphism**, and **abstraction**.
+
+---
+
+### ✅ **What is a Class, Object, and Method?**
+
+| Concept   | Explanation |
+|-----------|-------------|
+| **Class** | A blueprint or template to create objects. It defines properties (variables) and behaviors (methods). |
+| **Object** | An instance of a class. It represents a real-world entity with state and behavior. |
+| **Method** | A function defined inside a class that performs actions using the object’s data. |
+
+🔸 **Example in Python:**
+```python
+class Car:  # Class
+    def __init__(self, brand, color):  # Constructor
+        self.brand = brand  # Instance Variable
+        self.color = color
+
+    def display(self):  # Method
+        print(f"Brand: {self.brand}, Color: {self.color}")
+
+car1 = Car("Toyota", "Red")  # Object
+car1.display()
+```
+
+---
+
+### ✅ **What are Instance Variables?**
+- Variables that are unique to each object.
+- Declared using `self.variable_name` inside the class.
+
+```python
+self.brand = brand  # 'brand' is an instance variable
+```
+
+### ✅ **What is an Instance Method?**
+- A method that operates on the **instance variables** of an object.
+- Always has `self` as the first parameter.
+
+```python
+def display(self):  # Instance method
+    print(self.brand)
+```
+
+---
+
+### ✅ **What is a Constructor?**
+- A **special method** used to initialize objects.
+- In Python, the constructor is `__init__()` method.
+- Automatically called when an object is created.
+
+### 📌 **How to create a constructor:**
+```python
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+s1 = Student("Alice", 22)  # Constructor is called here
+```
+
+---
 

@@ -1,0 +1,18 @@
+Abstraction
+    Acess Modifiers
+    1.Public: It can accessed any where in the program
+        college="Satyabhama"
+        classname.college
+    2.Private: It can accessed from same Class or sub Class
+        self._email:asda@gmail.com
+    3.Protected : It can be accessed only by the same Class
+        self._phone=31313646
+
+Python      Class   Package     Sub-Class   Global
+Public      Yes     Yes         Yes         Yes
+Private     Yes     Yes         Yes         No
+Protected   Yes     No          No          No
+
+1. A method which had declaration but no definition is called abstract method.
+2. Abstract method is available only in abstract class
+3. Abstract class should have atleast one abstract method.

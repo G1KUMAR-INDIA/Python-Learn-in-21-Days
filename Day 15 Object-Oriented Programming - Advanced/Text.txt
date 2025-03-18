@@ -1,0 +1,31 @@
+1.Class
+2.Object
+3.Constructor
+4.__init__
+5.self
+6.Instance Method
+7.call method through object
+8.member declaration in the constructor
+9.Class Variable
+10.Static Variable
+
+1.Polymorphism
+    1.Method Overloading
+    2.Method Overriding
+    3.Operator Overloading
+    4.Duck typing
+2.Inheritance
+    1.Single Inheritance
+    2.Multiple Inheritance
+    3.Multi Level Inheritance
+    4.Hirarchical Inheritance
+3.Abstraction
+    Acess Modifiers
+    1.Public
+    2.Private
+    3.Protected
+4.Encapsulation
+    1.Hiding Complexity
+
+
+https://www.youtube.com/watch?v=mGJusQ7iBwc
