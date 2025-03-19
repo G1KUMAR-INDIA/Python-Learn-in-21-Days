@@ -12,6 +12,19 @@ Parent->
 
 Polymorphism:
 1.Method Overloading
+
 2.Method Overriding
+
 3.Operator Overloadingg
+
 4.Duck type
+
+Abstraction:
+        Acess Modifiers:
+        1.Public
+        2.Protected
+        3.Private
+Encapsulation:
+        Meaning of Encapsulation is Hiding complexity and showing only what is necessary
+
+

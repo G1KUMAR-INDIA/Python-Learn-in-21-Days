@@ -15,4 +15,4 @@ class manifactureteam:
         com.manifacture()
 obj_user=user_of_car()
 obj_manf=manifactureteam()
-obj_manf.work(obj_user)
+obj_manf.work(obj_user) # Duck typing

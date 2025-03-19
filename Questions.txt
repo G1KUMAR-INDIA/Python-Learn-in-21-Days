@@ -32,7 +32,11 @@ What are class level variable?
 
 what are the four pillars of OOPs?
 
-What is inheritance?List out its types?
+What is inheritance?List out its types?Explain each type?
+
+What is Polymorphism?List out its types?Explain each type?
+
+What is Access Modifiers?
 
 What is Public, Private and Protected access Modifiers?
 

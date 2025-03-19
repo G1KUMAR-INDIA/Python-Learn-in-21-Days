@@ -11,9 +11,10 @@ class visualstudio:
         print("Spell checking")
 
 class laptop:
-    def code(self,ide):
-        ide.execute()   
+    def code(self,idle):
+        idle.execute()   
 
-ide=pycharm()
+idle=pycharm()
+idle1=visualstudio()
 lap1=laptop()
-lap1.code(ide)
+lap1.code(idle1)
