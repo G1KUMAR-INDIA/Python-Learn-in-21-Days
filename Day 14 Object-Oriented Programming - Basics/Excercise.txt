@@ -1,0 +1,10 @@
+Day14-Practice Exercises
+1.Creating a Basic Class and Object:
+    o   Define a class Person with attributes name and age.
+    o   Create a method introduce() that prints "Hello, my name is [name] and I am [age] years old."
+    o   Create an instance of the Person class and call the introduce() method.
+2.Using the __init__() Method and Modifying Object Properties:
+    o   Create a class Book with attributes title and author.
+    o   Initialize these attributes using the __init__() method.
+    o   Create an object of the Book class and print its details.
+    o   Modify the title attribute of the object and print the updated details.

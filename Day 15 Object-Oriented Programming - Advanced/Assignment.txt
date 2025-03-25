@@ -1,0 +1,134 @@
+Day 15: Advanced OOP in Python - Daily Assignment & Test
+Daily Assignment Questions (2 Questions)
+1. Develop a Library Management System using Inheritance
+    Create a Library Management System where:
+        • LibraryItem (Base class) contains attributes like title, author, and item_id.
+        • Book and Magazine classes inherit from LibraryItem.
+        • Book should have an additional genre, and Magazine should have issue_number.
+        • Implement a method display_info() that is overridden in child classes to display
+        respective details.
+    Test Cases:
+        • Create at least two books and one magazine and call display_info() on each
+        object.
+2. Build a Secure Banking System using Encapsulation
+    Design a BankAccount class that:
+        • Has a private variable __balance.
+        • Provides methods deposit(amount), withdraw(amount), and get_balance().
+        • Ensures balance cannot be accessed directly from outside the class.
+        • Create a SavingsAccount class that inherits from BankAccount and adds
+        interest_rate functionality.
+    Test Cases:
+        • Create an account, deposit money, withdraw money, and check the balance.
+        • Try accessing __balance directly and note the error.
+-------------------------------------------------------------------------------------------        
+# Answers
+# 1st Question Answer:
+# Base class
+class LibraryItem:
+    def __init__(self, title, author, item_id):
+        self.title = title
+        self.author = author
+        self.item_id = item_id
+
+    def display_info(self):
+        print(f"Title: {self.title}")
+        print(f"Author: {self.author}")
+        print(f"Item ID: {self.item_id}")
+
+
+# Book class inheriting from LibraryItem
+class Book(LibraryItem):
+    def __init__(self, title, author, item_id, genre):
+        super().__init__(title, author, item_id)
+        self.genre = genre
+
+    def display_info(self):
+        super().display_info()
+        print(f"Genre: {self.genre}")
+        print("-" * 30)
+
+
+# Magazine class inheriting from LibraryItem
+class Magazine(LibraryItem):
+    def __init__(self, title, author, item_id, issue_number):
+        super().__init__(title, author, item_id)
+        self.issue_number = issue_number
+
+    def display_info(self):
+        super().display_info()
+        print(f"Issue Number: {self.issue_number}")
+        print("-" * 30)
+
+
+# -------------------------------
+# 📦 Test Cases / Example Usage
+# -------------------------------
+book1 = Book("The Alchemist", "Paulo Coelho", "B001", "Fiction")
+book2 = Book("Python Programming", "John Zelle", "B002", "Education")
+magazine1 = Magazine("National Geographic", "Various Authors", "M001", "March 2025")
+
+# Displaying information
+book1.display_info()
+book2.display_info()
+magazine1.display_info()
+-------------------------------------------------------------------------------------------        
+# 2nd Question Answer:
+# Base class
+class BankAccount:
+    def __init__(self, initial_balance=0):
+        self.__balance = initial_balance  # private variable
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            print(f"Deposited: {amount}")
+        else:
+            print("Deposit amount must be positive.")
+
+    def withdraw(self, amount):
+        if 0 < amount <= self.__balance:
+            self.__balance -= amount
+            print(f"Withdrawn: {amount}")
+        else:
+            print("Insufficient balance or invalid amount.")
+
+    def get_balance(self):
+        return self.__balance
+
+
+# Derived class
+class SavingsAccount(BankAccount):
+    def __init__(self, initial_balance=0, interest_rate=0.02):
+        super().__init__(initial_balance)
+        self.interest_rate = interest_rate
+
+    def apply_interest(self):
+        interest = self.get_balance() * self.interest_rate
+        self.deposit(interest)
+        print(f"Interest applied: {interest}")
+
+
+# -------------------------------
+# 📦 Test Cases / Example Usage
+# -------------------------------
+print("=== Savings Account Operations ===")
+account = SavingsAccount(initial_balance=1000, interest_rate=0.05)
+
+account.deposit(500)              # Depositing money
+account.withdraw(200)             # Withdrawing money
+print("Current Balance:", account.get_balance())  # Check balance
+
+account.apply_interest()          # Apply interest
+print("Balance after interest:", account.get_balance())
+
+# Try to access __balance directly
+print("\n=== Trying to access private __balance directly ===")
+try:
+    print(account.__balance)  # This should raise an error
+except AttributeError as e:
+    print("Error:", e)
+
+# Accessing mangled name (not recommended, but for educational purposes)
+print("\nAccessing mangled variable (for demonstration only):")
+print("Accessing via _BankAccount__balance:", account._BankAccount__balance)
+-------------------------------------------------------------------------------------------        

@@ -1,0 +1,30 @@
+Daily Assignment questions
+One-Word or One-Line Answer Questions
+1.Define "Byte."
+Ans:Units of Binary Data(either one of 0's or 1's)is called bit.
+    Collection of this bits(equal to 8 bits)is called as "Byte".
+
+2.What does PVM stand for in Python?.
+Ans:Python Virtual Machine (PVM) is an essential component of Python's execution process. 
+    It acts as an interpreter that executes the compiled bytecode (.pyc files) generated from Python source code. 
+    The PVM is responsible for running Python programs and handling memory management, dynamic typing, and garbage collection.
+
+3.Name two libraries in Python used for data visualization.
+Ans:Python Libraries for Data Visualization
+    1.Matplotlib – Basic plotting library for static graphs like line and bar charts.
+    2.Seaborn – Enhances Matplotlib with stylish statistical plots.
+    3.Plotly – Creates interactive and web-friendly visualizations.
+    4.Bokeh – Focuses on interactive and real-time data visualizations.
+    5.ggplot (plotnine) – Uses a grammar-of-graphics approach for plotting.
+    6.Pandas Visualization – Quick plots from Pandas DataFrames.
+    7.Altair – Simplifies complex statistical graphics with minimal code.
+    8.Folium – Specialized in interactive geographic maps.
+
+4.What was the primary storage medium for data 35 years ago?
+Ans:35 years ago, in the 1980s, the primary storage medium for data was magnetic tapes and floppy disks
+
+5.What is the key feature of high-level programming languages?
+Ans:The key feature of high-level programming languages is that they are closer to human language and abstract away machine-specific details, making them easier to read, write, and maintain.
+
+6.What is the role of garbage collection in Python?
+Ans:Garbage collection in Python automatically manages memory by removing unused objects from memory. It detects and frees memory occupied by objects no longer in use, helping prevent memory leaks and optimizing performance.

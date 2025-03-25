@@ -1,0 +1,16 @@
+Day18: Practice Exercise Questions (3 Questions)
+1. Use Lambda with map() to Double Elements
+Write a lambda function inside map() that doubles each element in a list.
+Example Input: [1, 2, 3, 4, 5]
+Expected Output: [2, 4, 6, 8, 10]
+2️. List Comprehension for Odd Numbers
+Write a list comprehension to extract only the odd numbers from a given list.
+Example Input: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Expected Output: [1, 3, 5, 7, 9]
+3. Use Lambda with sorted() to Sort a List of Tuples
+Given a list of tuples containing names and ages, use lambda inside sorted() to sort
+them by age.
+Example Input:
+people = [("Alice", 25), ("Bob", 20), ("Charlie", 30)]
+Expected Output:
+[('Bob', 20), ('Alice', 25), ('Charlie', 30)]

@@ -1,0 +1,51 @@
+Day-2 Exercise Homework
+Internals of Python
+Section 1: History of Python
+1.Short Answer Questions:
+    o   Who created Python, and in which year was it first released?
+    o   Why is Python named "Python"?
+    o   Mention two major changes introduced in Python 2.0 and Python 3.0.
+    o   List the key organizations that support Python development and maintenance.
+2.Timeline Activity:
+    o   Create a timeline of Python’s development from 1991 to the present, highlighting key milestones.
+Section 2: Features of Python
+3.Identify the Feature:
+    o   Which Python feature allows variables to change their type during execution? Provide an example.
+    o   Explain why Python is considered cross-platform.
+    o   What does it mean that Python is interpreted, and how does this affect debugging?
+4.True or False:
+    o   Python is only used for web development.
+    o   Python manages memory manually.
+    o   Python’s syntax is more complex than other programming languages.
+5.Practical Task:
+    o   Write a Python program demonstrating the following features:
+    ▪   Dynamic typing
+    ▪   Use of a standard library module (e.g., math or random)
+    ▪   Cross-platform compatibility by running it on different operating systems (if possible).
+Section 3: Why Python Is Popular
+6.Application Research:
+    o   Research one Python library for each of the following fields and write a brief description of its purpose:
+    ▪   Web Development
+    ▪   Data Science
+    ▪   Machine Learning
+7.Discussion Question:
+    o   Why do you think Python has gained popularity across diverse fields like automation, data science, and web development? Write your thoughts in 150–200 words.
+Section 4: Memory Management in Python
+8.Code Analysis:
+    o   Write a Python program demonstrating reference counting. Use the sys.getrefcount() method to verify reference counts for a variable.
+    o   Create an example that produces a reference cycle and use the gc module to clear it.
+9.  Explain Concepts:
+    o   What is the purpose of Python’s garbage collector, and how does it handle reference cycles?
+    o   Explain interning with an example.
+10.Research Task:
+    o   Find a tool or library to monitor Python memory usage and write a brief report on how to use it.
+Section 5: Setting Up Python Environment & Writing Programs
+11.Installation Task:
+    o   Install Python on your machine and verify the installation. Take a screenshot of the terminal output showing the Python version.
+12.First Python Program:
+    o   Write, save, and run your first Python program to print "Hello, World!" Include steps you followed and the output.
+13.Experiment with print():
+    o   Use the print() function to achieve the following outputs:
+    ▪   Print values separated by a comma (,).
+    ▪   Print values on the same line with a space in between.
+    ▪   Customize the end character to a period (.).

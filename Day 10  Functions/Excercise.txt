@@ -1,0 +1,43 @@
+Here are some exercise questions for candidates learning functions in Python:
+Beginner Level
+1.Greet User:
+    o   Create a function named greet that takes a single argument name as input.
+    o   The function should print a greeting message to the console, such as "Hello, [name]!".
+2.Calculate Area of a Rectangle:
+    o   Create a function named calculate_area_rectangle that takes two arguments: width and height.
+    o   The function should calculate and return the area of the rectangle.
+3.Check Even or Odd:
+    o   Create a function named is_even that takes a single argument number as input.
+    o   The function should return True if the number is even and False otherwise.
+4.Celsius to Fahrenheit:
+    o   Create a function named celsius_to_fahrenheit that takes one argument celsius as input.
+    o   The function should convert the temperature from Celsius to Fahrenheit and return the converted value.
+Intermediate Level
+1.Factorial:
+    o   Create a recursive function named factorial that takes a single argument n as input.
+    o   The function should calculate and return the factorial of n.
+2.Fibonacci Sequence:
+    o   Create a function named fibonacci that takes a single argument n as input.
+    o   The function should return the nth number in the Fibonacci sequence.
+3.Check Prime Number:
+    o   Create a function named is_prime that takes a single argument number as input.
+    o   The function should return True if the number is prime and False otherwise.
+4.Find Maximum of Three Numbers:
+    o   Create a function named find_max that takes three arguments: num1, num2, and num3.
+    o   The function should return the maximum of the three numbers.
+Advanced Level
+1.String Reversal:
+    o   Create a function named reverse_string that takes a string as input and returns the reversed string.
+2.Palindrome Check:
+    o   Create a function named is_palindrome that takes a string as input.
+    o   The function should return True if the string is a palindrome (reads the same forwards and backwards) and False otherwise.
+3.Generate Random Password:
+    o   Create a function named generate_password that takes an integer length as input.
+    o   The function should generate and return a random password of the specified length, including letters (both uppercase and lowercase) and digits.
+4.File Reading and Writing:
+    o   Create a function named read_file that takes a filename as input and returns the contents of the file as a string.
+    o   Create another function named write_to_file that takes a filename and a string as input and writes the string to the file.
+Remember to:
+    •   Encourage clear and concise code: Emphasize the importance of using meaningful variable names and writing well-documented code.
+    •   Test thoroughly: Encourage candidates to write unit tests to verify the correctness of their functions.
+    •   Consider edge cases: Ask candidates to think about potential edge cases and how their functions would handle them (e.g., invalid input, empty strings, etc.).

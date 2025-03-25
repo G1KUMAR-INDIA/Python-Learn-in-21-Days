@@ -1,0 +1,115 @@
+Day11. Assignment Questions
+1.Create a module named temperature.py that contains functions to convert Celsius to Fahrenheit and vice versa. Import and use it in another script.
+2.Write a script to count the number of functions present in the built-in os module.
+3.Create a package geometry with two modules:
+    o   circle.py (for calculating area and circumference)
+    o   rectangle.py (for calculating area and perimeter) Use them in another script.
+4.  Use the random module to generate a list of 10 random numbers between 1 and 50. Find the maximum and minimum values in the list.
+5.  Create a custom module math_utilities.py that includes a function for calculating the factorial of a number. Import and use it in a program.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Answers:
+----------------------------------------------------------------------------------------------------------------------------------------------------
+# 1st Questions Answers
+# Creating one module with name temperature.py
+# Function to convert Celsius to Fahrenheit
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+# Function to convert Fahrenheit to Celsius
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+# Creating script to use above module in main.py
+# Importing temperature module
+import temperature
+# Importing temperature module
+import temperature
+# Taking temperature from user
+Temp=input("Enter temperature in Celsius or Fahrenheit: ")
+if Temp=="C" or Temp=="c":
+    # Taking temperature from user
+    celsius = float(input("Enter temperature in Celsius: "))
+    # Converting temperature
+    print(f"{celsius}°C is {temperature.celsius_to_fahrenheit(celsius)}°F")
+elif Temp=="F" or Temp=="f":
+    # Taking temperature from user
+    fahrenheit = float(input("Enter temperature in Fahrenheit: "))
+    # Converting temperature
+    print(f"{fahrenheit}°F is {temperature.fahrenheit_to_celsius(fahrenheit)}°C")
+else:
+    print("Invalid Input")
+----------------------------------------------------------------------------------------------------------------------------------------------------
+# 2nd Question Answer:
+# Count the number of functions in the os module
+import os
+import inspect
+
+functions = [name for name in dir(os) if inspect.isfunction(getattr(os, name))]
+print("Number of functions in os module:", len(functions))
+----------------------------------------------------------------------------------------------------------------------------------------------------
+# 3rd Question Answer:
+# Creating two modules with name circle.py and rectangle.py
+# importing these modules in main.py
+# circle.py
+# circle area and circumference
+def area(radius):
+    return 3.14 * radius ** 2
+def circumference(radius):
+    return 2 * 3.14 * radius
+# rectangle.py
+# area and perimeter of rectangle
+def area(length, width):
+    return length * width
+
+def perimeter(length, width):
+    return 2 * (length + width)
+# main.py
+# geomentry
+# Selecting the shape
+import circle
+import rectangle
+shape = input("Enter the shape in meter: ")
+# Checking the shape
+if shape == "circle" or shape == "Circle":
+    radius = float(input("Enter the radius: "))
+    print(f"Area of circle: {circle.area(radius)} m²")
+    print(f"Circumference of circle: {circle.circumference(radius)} m")
+elif shape == "rectangle" or shape == "Rectangle":
+    length = float(input("Enter the length: "))
+    width = float(input("Enter the width: "))
+    print(f"Area of rectangle: {rectangle.area(length, width)} m²")
+    print(f"Perimeter of rectangle: {rectangle.perimeter(length, width)} m")
+else:
+    print("Invalid shape")
+----------------------------------------------------------------------------------------------------------------------------------------------------
+# 4th Question Answer:
+# importing random module
+import random
+# print(dir(random))
+# Generate a list of 10 random numbers between 1 and 50
+random_numbers = [random.randint(1, 50) for _ in range(10)]
+
+# Find the maximum and minimum values
+max_value = max(random_numbers)
+min_value = min(random_numbers)
+
+# Print the list and the results
+print(f"Random numbers: {random_numbers}")
+print(f"Maximum value: {max_value}")
+print(f"Minimum value: {min_value}")
+----------------------------------------------------------------------------------------------------------------------------------------------------
+# 5th Question Answer:
+# Creating custom module math_utilities.py and import it in math.py
+# math_utilities.py
+# creating a function to calculate the factorial of a number
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+# math.py
+# importing custom module
+import math_utilities
+# Taking number from user
+num = int(input("Enter a number: "))
+# Calling function from custom module
+print(f"The factorial of {num} is {math_utilities.factorial(num)}")
+----------------------------------------------------------------------------------------------------------------------------------------------------

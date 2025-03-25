@@ -1,0 +1,20 @@
+Interview Based Questions :Exercise questions
+Section 1: Data and Its Importance
+1.Define data and explain why it is considered the foundation of decision-making.
+2.List and describe four ways data impacts modern businesses.
+Section 2: The Evolution of Data
+3.Explain the evolution of data storage and management from the 1980s to the 2020s.
+Section 3: History and Features of Python
+4.Write a brief history of Python, including its creation and key milestones.
+5.List and explain five features of Python that make it suitable for beginners.
+Section 3: High-Level vs. Low-Level Programming Languages
+6.Contrast high-level and low-level programming languages with examples.
+Section 5: Bits and Bytes
+7.What is a bit, and how does it differ from a byte? Provide examples of their usage in computing.
+8.Explain how data sizes are measured using bytes, kilobytes, and beyond.
+Section 6: Interpreters vs. Compilers
+9.Define interpreters and compilers. Give examples of languages that use each.
+10.Discuss the advantages and disadvantages of using an interpreter over a compiler.
+Section 8: Memory Management in Python
+11.Explain the difference between heap memory and stack memory in Python.
+12.How does Python's garbage collection process work?

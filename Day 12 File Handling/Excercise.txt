@@ -1,0 +1,15 @@
+Day12: Exercise Questions for Homework
+1. Basic File Reading
+    Write a program to read the contents of a file named homework.txt and print it line by line.
+2. Writing to a File
+    Create a program that writes the following lines into a file named output.txt:
+    Hello, World!
+    Welcome to File Handling in Python.
+3. Word Count
+    Write a program that reads a file named data.txt and prints the number of words in it.
+4. Append Data
+    Create a program to append the text "Python is fun!" to a file named notes.txt.
+5. Copy File Content
+    Write a program that copies the content of source.txt into a new file named destination.txt.
+6. Count the Occurrence of a Word
+    Write a program to read a file and count how many times the word "Python" appears.

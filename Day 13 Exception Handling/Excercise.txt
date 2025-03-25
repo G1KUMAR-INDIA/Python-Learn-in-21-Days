@@ -1,0 +1,36 @@
+Here are some practice questions on Exception Handling to test and strengthen your understanding:
+1. Simple Arithmetic Exception Handling
+    •   Write a program that:
+        o   Takes two numbers as input from the user.
+        o   Performs addition, subtraction, multiplication, and division.
+        o   Handles:
+            ▪   ZeroDivisionError (if division by zero occurs).
+            ▪   ValueError (if the input is not a valid number).
+2. Tuple Index Error Handling
+    •   Write a program that:
+        o   Creates a tuple with five elements.
+        o   Asks the user for an index and prints the corresponding element.
+        o   Handles:
+            ▪   IndexError (if the index is out of range).
+            ▪   ValueError (if the user enters a non-numeric value).
+3. Safe List Modification
+    •   Write a program that:
+        o   Creates a list of integers.
+        o   Asks the user for an index and a new value to update the list.
+        o   Handles:
+            ▪   IndexError (if the index is out of range).
+            ▪   ValueError (if the input is not a valid number).
+            ▪   TypeError (if a non-integer value is entered).
+4. Division Using a Function with Exception Handling
+    •   Write a function safe_divide(a, b) that:
+        o   Takes two numbers and returns a / b.
+        o   Handles:
+            ▪   ZeroDivisionError (if b is zero).
+            ▪   TypeError (if input values are not numbers).
+    •   Call the function with user inputs.
+5. Custom Exception for Negative Numbers
+    •   Define a custom exception NegativeNumberError.
+    •   Write a function check_positive(number) that:
+        o   Raises NegativeNumberError if number is negative.
+        o   Otherwise, prints "Valid number."
+    •   Use a try-except block to handle this.                        

@@ -1,0 +1,17 @@
+Exercise Questions on Dictionaries
+1.Country Capitals Dictionary
+    o   Create a dictionary that stores 5 countries as keys and their capitals as values.
+    o   Print all keys, values, and key-value pairs separately.
+2.Character Frequency Counter
+    o   Write a program that takes a string input from the user and counts the frequency of each character using a dictionary.
+    o   Print the dictionary where keys are characters and values are their frequencies.
+3.Student Score Analyzer
+    o   Create a dictionary where student names are keys and their scores (out of 100) are values.
+    o   Find and print the name of the student with the highest score.
+4.Merging Two Dictionaries
+    o   Create two dictionaries with some key-value pairs.
+    o   Merge both dictionaries into one and print the updated dictionary.
+5.Word Count in a Sentence
+    o   Take a sentence input from the user.
+    o   Count the occurrences of each word in the sentence using a dictionary.
+    o   Print the word frequency dictionary.

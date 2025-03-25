@@ -1,0 +1,166 @@
+Here are some in-class assignment questions based on the Python operators content:
+1. Arithmetic Operators
+    •   Question 1: Given two numbers as input, perform all the arithmetic operations on them (addition, subtraction, multiplication, division, floor division, modulo, and exponentiation) and display the results.
+2. Comparison Operators
+    •   Question 2: Write a program to take two numbers as input and compare them using all the comparison operators. Print the result of each comparison.
+3. Logical Operators
+    •   Question 3: Write a program to check if a given number is positive and even using logical operators.
+4. Bitwise Operators
+    •   Question 4: Given two numbers, perform bitwise AND, OR, and XOR operations on them and display the results.
+5. Assignment Operators
+    •   Question 5: Write a program to demonstrate the use of different assignment operators (+=, -=, *=, /=, //=, %=, **=) on a given variable.
+6. Membership Operators
+    •   Question 6: Create a list of fruits. Ask the user to input a fruit name and check if the input fruit is present in the list using the in operator.
+7. Identity Operators
+    •   Question 7: Create two lists with identical elements. Check if the two lists refer to the same object in memory using the is operator.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 1st Question Answer:
+# Taking two numbers a,b  from input
+a=float(input("Enter First Number: "))
+b=float(input("Enter Second Number: "))
+# Addition of Two Input Numbers
+print("Addition of a and b: ",a+b)
+#print(a,b)
+# Subtraction of Two Input Numbers
+print("Subtract b from a: ",a-b)
+
+# Multiplication of TWo Input Numbers
+print("Multiplication of a and b: ",a*b)
+
+# Division of  Two Input Numbers
+print("Division of a by b: ", a/b if b!=0 else "Undefined (division by zero)")
+
+# Floor Division of Two Input Numbers
+print("Floor Division of a by b: ", a//b if b!=0 else "Undefined (division by zero)")
+
+# Modulus of Two Input Numbers
+print("Modulus of a and b: ",a%b if b != 0 else "Undefined (modulo by zero)")
+
+# Exponentiation of Two Input Numbers
+print("Exponentiation of a of b: ",a**b)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 2nd Question Answer:
+# Taking two Numbers from Input
+a=float(input("Enter First Number: "))
+b=float(input("Enter Second Number: "))
+# print(a,b)
+# Performing comparison operations
+print(f"{a} == {b} : {a == b}")  # Equal to
+print(f"{a} != {b} : {a != b}")  # Not equal to
+print(f"{a} > {b}  : {a > b}")   # Greater than
+print(f"{a} < {b}  : {a < b}")   # Less than
+print(f"{a} >= {b} : {a >= b}")  # Greater than or equal to
+print(f"{a} <= {b} : {a <= b}")  # Less than or equal to
+
+# Example Output
+# Enter First Number: 22
+# Enter Second Number: 25
+# 22.0 == 25.0 : False
+# 22.0 != 25.0 : True
+# 22.0 > 25.0  : False
+# 22.0 < 25.0  : True
+# 22.0 >= 25.0 : False
+# 22.0 <= 25.0 : True
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 3rd Question Answer:
+# Taking Number from Input
+num=float(input("Enter given Number: "))
+# Checking Number is Positive or Negative
+if num>0 and num%2==0:
+    print("Number is Postive and Even")
+else:
+  print("Number is not Positive and Even")
+
+# Example Output
+# Enter given Number: 22
+# Number is Postive and Even
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 4th Question Answer:
+# Taking two Numbers from Input
+num1=int(input("Enter First Number: "))
+num2=int(input("Enter Second Number: "))
+# Bitwise operations between num1 and num2
+bitwise_and = num1 & num2
+bitwise_or = num1 | num2
+bitwise_xor = num1 ^ num2
+
+print(f"Bitwise AND ({num1} & {num2})  = {bitwise_and}")
+print(f"Bitwise OR  ({num1} | {num2})  = {bitwise_or}")
+print(f"Bitwise XOR ({num1} ^ {num2})  = {bitwise_xor}")
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 5th Question Answer:
+# Taking Number from input
+num=int(input("Enter the Number: "))
+print("Entered Number:",num)
+
+# += Operation
+num+=5
+print(f"After num+=5 Operation Updated num Value:{num}")
+
+# -= Operation
+num-=4
+print(f"After num-=4 Operation Updated num Value:{num}")
+
+# /= Operation
+num/=3
+print(f"After num/=3 Operation Updated num Value:{num}")
+
+# //= Operation
+num//=2
+print(f"After num//2 Operation Updated num Value:{num}")
+
+# %= Operation
+num%=6
+print(f"After num%=6 Operation Updated num Value:{num}")
+
+# *= Operation
+num*=7
+print(f"After num*=7 Operation Updated num Value:{num}")
+
+# Sample Output:
+# Enter the Number: 25
+# Entered Number: 25
+# After num+=5 Operation Updated num Value:30
+# After num-=4 Operation Updated num Value:26
+# After num/=3 Operation Updated num Value:8.666666666666666
+# After num//2 Operation Updated num Value:4.0
+# After num%=6 Operation Updated num Value:4.0
+# After num*=7 Operation Updated num Value:28.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 6th Question Answer:
+# Take Fruit Name from Input
+fruit = input("Enter Fruit Name to check if it exists in the list: ").strip().lower()
+
+# List of fruits
+fruits_list = [
+    "Mango", "Banana", "Guava", "Papaya", "Pomegranate",
+    "Jackfruit", "Coconut", "Custard Apple", "Pineapple",
+    "Apple", "Grapes", "Watermelon", "Muskmelon", "Chikoo (Sapota)",
+    "Orange", "Lemon", "Litchi", "Fig", "Pear", "Jamun (Indian Blackberry)",
+    "Amla (Indian Gooseberry)", "Ber (Indian Jujube)", "Dragon Fruit",
+    "Strawberry", "Peach", "Plum"
+]
+
+# Convert list items to lowercase for case-insensitive comparison
+fruits_list_lower = [f.lower() for f in fruits_list]
+
+# Check if the input fruit is in the list
+if fruit in fruits_list_lower:
+    print(f"The fruit '{fruit}' exists in the list.")
+else:
+    print(f"The fruit '{fruit}' does NOT exist in the list.")
+
+# Example Output:
+# Enter Fruit Name to check if it exists in the list: fig
+# The fruit 'fig' exists in the list.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 7th Question Answer:
+# Creating two lists with identical elements
+list1=[9,8,7,6,5,4,3,2,1]
+list2=list1
+
+# checking two lists refer to the same object in memory 
+if list1 is list2:
+  print(f"list1 :{list1} and list2 :{list2} are same object in memory.")
+else:
+  print(f"list1 :{list1} and list2 :{list2} are not same object in memory.")

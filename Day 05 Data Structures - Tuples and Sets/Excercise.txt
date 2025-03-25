@@ -1,0 +1,41 @@
+Practice Questions related to Tuples and Sets in Python:
+Basic Exercises
+1.Tuple Manipulation:
+    o   Create a tuple containing your favorite colors.
+    o   Access and print the first and last elements of the tuple.
+    o   Try to modify the first element of the tuple (you should encounter an error).
+    o   Create a new tuple by concatenating your original tuple with another tuple.
+2.Set Operations:
+    o   Create two sets of numbers: set1 = {1, 2, 3, 4} and set2 = {3, 4, 5, 6}.
+    o   Find and print the union, intersection, difference, and symmetric difference of set1 and set2.
+    o   Add a new element to set1.
+    o   Remove an element from set2.
+Intermediate Exercises
+3.Tuple and List Conversion:
+    o   Create a list of names.
+    o   Convert the list into a tuple.
+    o   Convert the tuple back into a list.
+    o   Try to sort the tuple (you should encounter an error).
+    o   Sort the list and then convert it back to a tuple.
+4.Set Applications:
+    o   Create a set of words from a given sentence (remove duplicates).
+    o   Write a program to find the common letters between two words.
+    o   Given a list of numbers, use a set to find the unique numbers in the list.
+Advanced Exercises
+5.Tuple Packing and Unpacking:
+    o   Create a tuple with multiple values.
+    o   Unpack the tuple into individual variables.
+    o   Use tuple unpacking to swap the values of two variables.
+6.Set Comprehension:
+    o   Create a set of squares of even numbers from 1 to 10 using set comprehension.
+    o   Create a set of vowels from a given string using set comprehension.
+7.Frozenset:
+    o   Create a frozenset.
+    o   Try to modify the frozenset (you should encounter an error).
+    o   Explain the use cases for frozensets.
+Remember:
+    •   Test your code thoroughly to make sure it produces the expected output.
+    •   Read the error messages carefully if you encounter any problems.
+    •   Try to solve the problems independently before seeking help.
+These exercises cover a range of topics related to tuples and sets, allowing students to practice the concepts learned in class. You can adjust the difficulty and complexity of the exercises based on the students' level and the time available.
+I hope these exercises are helpful!

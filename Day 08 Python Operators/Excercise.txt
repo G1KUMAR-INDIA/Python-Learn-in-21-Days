@@ -1,0 +1,26 @@
+Day-8 Exercise (Homework):
+Here are more than 10 exercise questions based on the Python operators content, suitable for homework:
+1. Arithmetic Operators
+    •   Question 1: Calculate the area and perimeter of a rectangle given its width and height.
+    •   Question 2: Write a program to calculate the simple interest on a given principal, rate of interest, and time.
+    •   Question 3: Find the quotient and remainder when a given number is divided by another number.
+2. Comparison Operators
+    •   Question 4: Write a program to check if a given number is even or odd.
+    •   Question 5: Create a program to determine if a person is eligible to vote (age >= 18).
+    •   Question 6: Given two numbers, find the larger of the two.
+3. Logical Operators
+    •   Question 7: Write a program to check if a year is a leap year. (A leap year is divisible by 4, but not by 100, unless it is also divisible by 400.)
+    •   Question 8: Create a program to determine if a person is eligible to drive based on age and whether they have a license.
+4. Bitwise Operators
+    •   Question 9: Write a program to swap the values of two variables using the XOR bitwise operator.
+    •   Question 10: Given two numbers, find their bitwise AND and OR.
+5. Assignment Operators
+    •   Question 11: Write a program to increment the value of a variable by 10 using the += operator.
+    •   Question 12: Create a program to double the value of a variable using the *= operator.
+6. Membership Operators
+    •   Question 13: Check if a given character is present in a given string.
+    •   Question 14: Determine if a given element exists in a list.
+7. Identity Operators
+    •   Question 15: Create two lists and check if they are identical using the is operator.
+    •   Question 16: Assign a value to a variable and then assign the same value to another variable. Check if they refer to the same object in memory.    
+    

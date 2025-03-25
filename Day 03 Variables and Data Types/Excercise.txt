@@ -1,0 +1,62 @@
+Day-3 --Exercise Questions for Homework:
+Here are the exercise questions for Day 3 based on the provided materials:
+1. Variables & Data Types
+    •   1.1: Declare variables to store your name, age, and height. Print the values of these variables.
+    •   1.2: Create a variable to store the price of an item. Calculate the total cost after adding 10% sales tax.
+    •   1.3: Declare two variables, one for your first name and one for your last name. Concatenate them to form your full name.
+    •   1.4: Create a variable to store a sentence. Print the length of the sentence.
+    •   1.5: Create a variable to store a number. Check if the number is even or odd.
+2. Keywords
+    •   2.1: List down at least 5 keywords in Python and explain their purpose.
+    •   2.2: Try to use a keyword as a variable name and observe the error message.
+3. Indentation
+    •   3.3: Write a simple if statement and deliberately introduce incorrect indentation. Observe the error message.
+    •   3.4: Write a simple for loop with correct indentation.
+4. Comments
+    •   4.1: Write a multi-line comment explaining the purpose of a specific piece of code (you can choose any simple code snippet).
+5. Strings
+    •   5.1: Create a string variable and use the .upper() and .lower() methods.
+    •   5.2: Extract a substring from a given string.
+    •   5.3: Count the number of occurrences of a specific character in a string.
+    •   5.4: Replace a substring within a string with another string.
+    •   5.5: Check if a string starts or ends with a specific substring.
+6. Numbers
+    •   6.1: Perform addition, subtraction, multiplication, and division operations on two numbers.
+    •   6.2: Calculate the square root of a given number using the math module.
+    •   6.3: Convert a float to an integer and vice versa.
+7. Boolean
+    •   7.1: Write a program to check if a given number is greater than 10 using boolean logic.
+    •   7.2: Create a program to check if a given character is a vowel.
+8. Lists
+    •   8.1: Create a list of your favorite colors.
+    •   8.2: Add a new color to the list.
+    •   8.3: Remove the first element from the list.
+    •   8.4: Access and print the second element of the list.
+    •   8.5: Modify the third element of the list.
+9. Tuples
+    •   9.1: Create a tuple of your favorite fruits.
+    •   9.2: Try to modify an element within the tuple and observe the error.
+    •   9.3: Access the last element of the tuple.
+10. Sets
+    •   10.1: Create a set of integers.
+    •   10.2: Add a new element to the set.
+    •   10.3: Check if a given number is present in the set.
+    •   10.4: Create two sets and perform union and intersection operations.
+11. Dictionaries
+    •   11.1: Create a dictionary to store the names and ages of three people.
+    •   11.2: Access and print the age of one of the people.
+    •   11.3: Add a new key-value pair to the dictionary.
+    •   11.4: Update the age of one of the people in the dictionary.
+12. Type Casting
+    •   12.1: Convert a string to an integer.
+    •   12.2: Convert a float to an integer.
+    •   12.3: Convert a list to a set.
+    •   12.4: Convert an integer to a string.
+13. Output Formatting
+    •   13.1: Use f-strings to print a formatted message with a name and age.
+    •   13.2: Use the .format() method to print a formatted message with multiple variables.
+14. User Input
+    •   14.1: Take the user's name as input and print a personalized greeting message.
+    •   14.2: Take two numbers as input from the user and calculate their sum.
+15. Multiple Inputs
+    •   15.1: Take three numbers as input from the user in a single line and calculate their average.

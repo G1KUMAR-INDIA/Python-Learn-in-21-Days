@@ -1,0 +1,213 @@
+Day14: Assignment Questions
+1.Understanding OOP Concepts: 
+    a) Define Object-Oriented Programming (OOP) and explain how it differs from procedural programming.
+2.Comparison of Procedural vs. OOP Approach: 
+    a) Convert the given procedural approach for storing employee details into an OOP-based approach using classes and objects. 
+    b) Explain the benefits of the OOP approach in this scenario. 
+    c) Implement the __str__() method in your class to return a meaningful string representation of the employee object.
+3.Class & Static Methods, Access Modifiers: 
+    a) Differentiate between instance variables, class variables, and static variables with examples. 
+    b) Implement a Python class BankAccount with a private attribute __balance and methods to deposit, withdraw, and check balance. Ensure balance updates only through methods. 
+    c) Demonstrate the use of a @classmethod and @staticmethod in a class of your choice.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Answers
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1st Question Answers
+    Object-Oriented Programming (OOP) is a programming paradigm that organizes
+software design around objects rather than functions and logic. Objects represent realworld
+entities, encapsulating data (attributes) and behavior (methods) into a single
+unit.
+OOP makes software development more organized, modular, scalable, and reusable.
+Advantages of OOP over Procedural Programming:
+---------------------------------------------------------------------------------------------------------
+|Feature        | Procedural Programming                 | Object-Oriented Programming(OOP)              |
+----------------------------------------------------------------------------------------------------------
+|Structure      | Organized in functions and procedures  | Organized into objects and classes            |
+----------------------------------------------------------------------------------------------------------
+|Code           | Low (Code duplication is common)       | High (Classes and objects can be reused)      |
+|Reusability    |                                        |                                               |
+----------------------------------------------------------------------------------------------------------
+|Data Security  | Data is globally accessible            | Data is encapsulated and controlled           |
+----------------------------------------------------------------------------------------------------------
+|Flexibility    | Difficult to modify without            | Changes can be made without                   |
+|               | affecting all functions                | affecting other parts                         |
+----------------------------------------------------------------------------------------------------------
+|Scalability    | Harder to maintain large projects      | Suitable for large and complex applications   |              
+----------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 2nd Question Answer:
+# 2.a
+# Procedural Approach
+employees = []
+
+def add_employee(emp_id, name, department, salary):
+    employee = {
+        "id": emp_id,
+        "name": name,
+        "department": department,
+        "salary": salary
+    }
+    employees.append(employee)
+
+def display_employees():
+    for emp in employees:
+        print(f"ID: {emp['id']}, Name: {emp['name']}, Department: {emp['department']}, Salary: {emp['salary']}")
+
+# Add employee data
+add_employee(101, "Alice", "HR", 50000)
+add_employee(102, "Bob", "IT", 60000)
+
+# Display employee data
+display_employees()
+
+# OOP-Based Approach
+
+class Employee:
+    def __init__(self, emp_id, name, department, salary):
+        self.emp_id = emp_id
+        self.name = name
+        self.department = department
+        self.salary = salary
+    # 2c Implementing __str__() method in Employee class:
+    def __str__(self):
+        return f"ID: {self.emp_id}, Name: {self.name}, Department: {self.department}, Salary: ₹{self.salary}"
+
+class EmployeeManager:
+    def __init__(self):
+        self.employees = []
+
+    def add_employee(self, emp_id, name, department, salary):
+        employee = Employee(emp_id, name, department, salary)
+        self.employees.append(employee)
+
+    def display_employees(self):
+        for emp in self.employees:
+            print(emp)
+
+# Usage
+manager = EmployeeManager()
+manager.add_employee(101, "Alice", "HR", 50000)
+manager.add_employee(102, "Bob", "IT", 60000)
+
+manager.display_employees()
+
+# 2.b
+# Benefits of OOP Approach in this Scenario:
+---------------------------------------------------------------------------------------------------------------------------
+|Aspect     	        |Procedural Approach	                     |OOP Approach                                            |
+---------------------------------------------------------------------------------------------------------------------------
+|Modularity	        |Functions and data are separated	     |Data and behavior encapsulated inside classes           |
+---------------------------------------------------------------------------------------------------------------------------
+|Reusability	        |Difficult to reuse logic across projects    |Easy to reuse classes and extend functionality          |
+---------------------------------------------------------------------------------------------------------------------------
+|Scalability	        |Harder to scale large systems	             |Easier to manage and scale with inheritance, composition|
+---------------------------------------------------------------------------------------------------------------------------
+|Maintainability        |Data structure changes affect all functions |Changes in class don't affect outer structure           |
+---------------------------------------------------------------------------------------------------------------------------
+|Real-World Modeling    |Less intuitive	                             |Closer to real-world representation (Employee as object)|
+---------------------------------------------------------------------------------------------------------------------------
+|Encapsulation	        |No data protection	                     |Encapsulated data increases safety and clarity          |
+---------------------------------------------------------------------------------------------------------------------------
+# 3rd Question Answer:
+# 3a Difference between Instance Variables, Class Variables, and Static Variables (with Examples):
+----------------------------------------------------------------------------------------------------------------------------------------------------
+|Variable Type	        |Description	                                       |Scope	            |Accessed via                                      |
+----------------------------------------------------------------------------------------------------------------------------------------------------
+|Instance Variable	|Belongs to a particular object; unique for each object|self.variable	    |object.variable                                   |
+----------------------------------------------------------------------------------------------------------------------------------------------------
+|Class Variable	        |Shared across all instances; belongs to the class     | ClassName.variable |ClassName.variable or object.variable             |
+----------------------------------------------------------------------------------------------------------------------------------------------------
+|Static Variable	|(Python doesn't have a separate keyword, static variables are just class variables used in @staticmethod or utility functions)|
+----------------------------------------------------------------------------------------------------------------------------------------------------
+# Example
+class Demo:
+    class_var = "I am a class variable"  # Class variable
+
+    def __init__(self, name):
+        self.name = name  # Instance variable
+
+    def show(self):
+        print("Instance Variable:", self.name)
+        print("Class Variable:", Demo.class_var)
+
+# Usage
+obj1 = Demo("Alice")
+obj2 = Demo("Bob")
+
+obj1.show()
+obj2.show()
+
+# Modifying class variable
+Demo.class_var = "Updated class variable"
+obj1.show()
+obj2.show()
+----------------------------------------------------------------------------------------------------------------------------------------------------
+# 3b
+# Python Class BankAccount with Private Attribute __balance and Controlled Access:
+class BankAccount:
+    def __init__(self, account_holder, initial_balance=0):
+        self.account_holder = account_holder
+        self.__balance = initial_balance  # Private attribute
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            print(f"₹{amount} deposited successfully.")
+        else:
+            print("Invalid deposit amount.")
+
+    def withdraw(self, amount):
+        if 0 < amount <= self.__balance:
+            self.__balance -= amount
+            print(f"₹{amount} withdrawn successfully.")
+        else:
+            print("Insufficient balance or invalid amount.")
+
+    def check_balance(self):
+        print(f"Current balance: ₹{self.__balance}")
+
+# Usage
+account = BankAccount("R Jeevan Kumar", 1000)
+account.check_balance()
+account.deposit(500)
+account.withdraw(300)
+account.check_balance()
+
+# Trying to access __balance directly (will fail)
+# print(account.__balance)  # AttributeError
+----------------------------------------------------------------------------------------------------------------------------------------------------
+# 3c
+# Demonstrate @classmethod and @staticmethod
+class Student:
+    school_name = "ABC Public School"  # Class variable
+
+    def __init__(self, name, grade):
+        self.name = name
+        self.grade = grade
+
+    @classmethod
+    def change_school(cls, new_school_name):
+        cls.school_name = new_school_name
+        print(f"School changed to: {cls.school_name}")
+
+    @staticmethod
+    def is_eligible_for_exam(attendance_percentage):
+        return attendance_percentage >= 75
+
+    def display(self):
+        print(f"Student: {self.name}, Grade: {self.grade}, School: {Student.school_name}")
+
+# Usage
+student1 = Student("Aarav", "10th")
+student1.display()
+
+# Using class method
+Student.change_school("XYZ International School")
+student1.display()
+
+# Using static method
+attendance = 80
+if Student.is_eligible_for_exam(attendance):
+    print("Eligible for exam.")
+else:
+    print("Not eligible for exam.")

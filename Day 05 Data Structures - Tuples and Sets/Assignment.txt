@@ -1,0 +1,76 @@
+Day 5: In-Class Assignment - Tuples and Sets
+Exercises:
+1.Tuple Manipulation:
+    o   Create a tuple of your favorite movies.
+    o   Print the length of the tuple.
+    o   Access and print the second movie in the tuple.
+    o   Create a new tuple containing the first three movies from the original tuple.
+2.Set Operations:
+    o   Create two sets of integers: set1 = {1, 2, 3, 4, 5} and set2 = {3, 4, 5, 6, 7}.
+    o   Find and print the intersection of set1 and set2.
+    o   Find and print the elements that are in set1 but not in set2.
+    o   Add the number 8 to set1.
+3.Tuple and Set Conversion:
+    o   Create a list of fruits.
+    o   Convert the list into a tuple.
+    o   Convert the tuple into a set.
+    o   Print the resulting set (note that duplicates will be removed).
+
+Answers:
+1st Question Answer:
+# Tuple Manipulation:
+# Create a tuple of my favorite movies
+pawan_kalyan_movies = (
+    "Attarintiki Daredi",
+    "Tholi Prema",
+    "Khushi",
+    "Gabbar Singh",
+    "Jalsa",
+    "Thammudu",
+    "Badri",
+    "Bheemla Nayak",
+    "Vakeel Saab",
+    "Suswagatham"
+)
+print(pawan_kalyan_movies)
+
+# Printing the length of the tuple
+print("Number of movies in the list:", len(pawan_kalyan_movies))
+
+# Accessing and printing the second movie in the tuple
+print("Second Movie:", pawan_kalyan_movies[1])
+
+# Creating a new tuple containing the first three movies
+first_three_movies = pawan_kalyan_movies[:3]
+print("\nFirst three movies:")
+for movie in first_three_movies:
+    print(movie)
+
+2nd Question Answer:
+set1 = {1, 2, 3, 4, 5}
+set2 = {3, 4, 5, 6, 7}
+# intersection of set1 and set2
+intersection_set  = set1 & set2
+print("intersection of set1 and set2:",intersection_set)
+
+# elements that are in set1 but not in set2
+# Independent set of set1
+independent_set1=set1-set2
+print("elements that are in set1 but not in set2:",independent_set1)
+
+# Adding the number 8 to set1
+set1.add(8)
+print("Set1 after adding 8:",set1)
+
+3rd Question Answer:
+# Creating a list of fruits
+fruits_list = ["Apple", "Banana", "Orange", "Mango", "Banana", "Grapes", "Apple","Banana","Apple","Mango"]
+print("List of fruits:",fruits_list)
+
+# Converting the list into a tuple
+fruits_tuple = tuple(fruits_list)
+print("Tuple of fruits:", fruits_tuple)
+
+# Converting the tuple into a set
+fruits_set = set(fruits_tuple)
+print("Set of fruits (duplicates removed):", fruits_set)

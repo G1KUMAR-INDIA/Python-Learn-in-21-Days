@@ -1,0 +1,20 @@
+Daily Assignment
+Short Answer Questions
+1.Explain why Python is considered dynamically typed.
+Ans:Python is considered dynamically typed because variable types are determined at runtime, not in advance. 
+    No don't need to declare the data type of a variable explicitly, and the type can change during program execution.
+
+2.List three areas where Python is widely used.
+Ans:1.Web Development (e.g., using Django, Flask)
+    2.Data Science and Machine Learning (e.g., using libraries like Pandas, NumPy, TensorFlow)
+    3.Automation and Scripting (e.g., for task automation, system administration)
+
+3.What is a reference cycle, and how is it managed in Python?
+Ans:A reference cycle occurs when objects reference each other in a way that prevents the garbage collector from reclaiming memory. 
+    Python manages reference cycles using its garbage collection mechanism, which includes a cycle detector that identifies and breaks such cycles to prevent memory leaks.
+
+4.What does the gc.collect() function do in Python?
+Ans:The gc.collect() function in Python manually triggers garbage collection, forcing the garbage collector to release memory used by objects that are no longer needed, including those involved in reference cycles.
+
+5.Why is Python popular in automation?
+Ans:Python is popular in automation because of its simple and readable syntax, vast library ecosystem, and ability to interface with operating systems, APIs, and other tools, making it ideal for tasks like file manipulation, web scraping, and testing.

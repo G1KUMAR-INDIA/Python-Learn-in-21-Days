@@ -1,0 +1,23 @@
+Day15- Practice Exercises (3 Questions)
+1. Polymorphism in Real Life
+Write a program demonstrating polymorphism with a Vehicle class that has a
+fuel_type() method. Implement two child classes:
+    . PetrolCar ¨ Returns "Petrol"
+    . ElectricCar ¨ Returns "Electric"
+Expected Output:
+    . Create an instance of each class and call fuel_type().
+2. Multiple Inheritance in a Smart Home System
+Design a SmartHomeDevice system with:
+    • LightSystem class → method turn_on_lights()
+    • SecuritySystem class → method activate_alarm()
+    • SmartHome class that inherits from both and implements a method
+    home_status()
+Test Cases:
+    • Create a SmartHome object and call all methods.
+3. Employee Management System with Multilevel Inheritance
+Create:
+    • Person class → Attributes: name, age
+    • Employee class (inherits Person) → Attributes: employee_id, department
+    • Manager class (inherits Employee) → Attributes: team_size
+Test Cases:
+    • Instantiate a Manager and call a method that displays all attributes.

@@ -1,0 +1,21 @@
+Practice Exercises (3 Questions)
+1. Read and Parse Nested JSON Data
+    Given the JSON file company.json with employee records:
+    {
+    "company": "TechCorp",
+    "employees": [
+    {"name": "Alice", "role": "Developer"},
+    {"name": "Bob", "role": "Designer"},
+    {"name": "Charlie", "role": "Manager"}
+    ]
+    }
+    •   Write a Python script to load this JSON file and print each employee's name and role.
+2. Convert Python Dictionary to JSON and Save to a File
+    •   Create a dictionary containing book details (title, author, year, price).
+    •   Convert the dictionary to JSON using json.dumps().
+    •   Write the JSON string to a file (books.json).
+3. Handle JSON Parsing Errors
+    •   Write a script that tries to load an invalid JSON string and handles errors using try-except.
+    •   Example:
+        invalid_json = '{ "name": "John", age: 30 }' # Missing quotes for age
+    •   The program should catch json.JSONDecodeError and print an appropriate error message.

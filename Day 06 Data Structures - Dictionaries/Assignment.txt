@@ -1,0 +1,73 @@
+In-Class Assignment Questions: Dictionaries
+Question 1: Creating and Accessing Dictionaries
+    1.Create a dictionary called person with the following details:
+        o   Name: "John"
+        o   Age: 30
+        o   City: "New York"
+    2.Perform the following:
+        o   Print the value of the "Name" key.
+        o   Add a new key-value pair "Country": "USA".
+        o   Update the "Age" key to 31.
+        o   Print the updated dictionary.
+______________________________________________________________________
+Question 2: Dictionary Methods
+Given the dictionary:
+fruits = {"apple": 50, "banana": 20, "cherry": 30, "date": 40}
+Perform the following:
+    1.Print all the keys in the dictionary.
+    2.Print all the values in the dictionary.
+    3.Print all the key-value pairs using the items() method.
+    4.Add a new fruit "mango" with a price of 60.
+    5.Remove the fruit "banana" from the dictionary.
+______________________________________________________________________
+
+# Answer 1:
+# Create the dictionary
+person = {
+    "Name": "John",
+    "Age": 30,
+    "City": "New York"
+}
+
+# Access and modify the dictionary
+print("Name:", person["Name"])  # Print the value of the "Name" key
+
+person["Country"] = "USA"  # Add a new key-value pair
+print("Updated Dictionary:", person)
+
+person["Age"] = 31  # Update the "Age" key
+print("Updated Age:", person["Age"])
+
+# Print the updated dictionary
+print("Updated Dictionary:", person)
+______________________________________________________________________
+# Answer 2:
+
+# Creating fruits Dictionary
+fruits = {"apple": 50, "banana": 20, "cherry": 30, "date": 40}
+
+# all the keys in the dictionary
+print("Keys in fruits Dictionary:")
+for keys in fruits:
+  print(keys)
+
+# all the values in the dictionary.
+print("Values in fruits Dictionary:")
+for values in fruits:
+  print(values)
+
+# all the key-value pairs using the items() method
+for key, value in fruits.items():
+    print(f"{key}: {value}")
+
+# Adding a new fruit "mango" with a price of 60
+fruits["mango"]=60
+print(fruits)
+
+# Removing the fruit "banana" from the dictionary
+del fruits["banana"]
+print(fruits)
+
+
+
+

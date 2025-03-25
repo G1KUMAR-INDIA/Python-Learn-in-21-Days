@@ -1,0 +1,146 @@
+Assignment questions Day 10: Functions in Python,
+1. Temperature Converter
+    •   Create a function convert_temperature that takes two arguments: temperature and unit (e.g., "C" for Celsius, "F" for Fahrenheit, "K" for Kelvin).
+    •   The function should convert the given temperature to the other two units and return them as a tuple.
+2. Grade Calculator
+    •   Create a function calculate_grade that takes a list of scores as input.
+    •   The function should calculate the average score and return the corresponding letter grade (e.g., A, B, C, D, F) based on a grading scale.
+3. Prime Number Checker
+    •   Create a function is_prime that takes an integer as input.
+    •   The function should return True if the number is prime and False otherwise.
+    •   Use this function within another function find_primes that takes a range (start and end) as input and returns a list of all prime numbers within that range.
+4. Character Counter
+    •   Create a function count_characters that takes a string as input.
+    •   The function should return a dictionary where keys are characters and values are the number of occurrences of each character in the string.
+5. Fibonacci Sequence Generator
+    •   Create a function generate_fibonacci that takes an integer n as input.
+    •   The function should return a list containing the first n numbers of the Fibonacci sequence.
+Instructions:
+    •   Students should solve the problems individually or in pairs.
+    •   Instruct students to explain their code and the logic behind their solutions to the class.
+    •   Provide hints and guidance as needed, but encourage students to find solutions independently.
+These exercises will help students practice:
+    •   Defining and using functions with different argument types (positional, keyword).
+    •   Working with control flow (if/else, loops).
+    •   Handling data structures (lists, dictionaries).
+    •   Applying recursive logic (in the challenge question).
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------    
+# 1st Question Answer:
+# Create a function to convert temperature
+def convert_temperature(temperature, unit):
+    # Convert temperature to the other two units
+    if unit == "C":
+        # Convert Celsius to Fahrenheit and Kelvin
+        fahrenheit = (temperature * 9/5) + 32
+        kelvin = temperature + 273.15
+        return fahrenheit, "Fahrenheit", kelvin,"Kelvin",
+    elif unit == "F":
+        # Convert Fahrenheit to Celsius and Kelvin
+        celsius = (temperature - 32) * 5/9
+        kelvin = (temperature + 459.67) * 5/9
+        return celsius,"Celsius", kelvin, "Kelvin"
+    elif unit == "K":
+        # Convert Kelvin to Celsius and Fahrenheit
+        celsius = temperature - 273.15
+        fahrenheit = (temperature * 9/5) - 459.67
+        return celsius,"Celsius", fahrenheit, "Fahrenheit"
+    else:
+        # Invalid unit
+        return "Invalid unit. Use 'C' for Celsius, 'F' for Fahrenheit, or 'K' for Kelvin."
+# Get user input
+temperature = float(input("Enter temperature: "))
+unit = input("Enter unit (C/F/K): ").upper()
+# Convert temperature
+result = convert_temperature(temperature, unit)
+# Print result
+print(result)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------    
+# 2nd Question Answer:
+# Function to calculate the average and grade
+def calculate_grade(scores):
+    total = sum(scores)
+    average = total / len(scores)
+    if average >= 90:
+        return "A", average
+    elif average >= 80:
+        return "B", average
+    elif average >= 70:
+        return "C", average
+    elif average >= 60:
+        return "D", average
+    else:
+        return "F", average 
+# Taking a list of scores from the user
+scores = []
+for i in range(5):
+    score = float(input(f"Enter score {i + 1}: "))
+    scores.append(score)
+# Calculating the average and grade
+# scores = [85, 92, 78, 95, 88]
+grade, average = calculate_grade(scores)
+print(f"Average: {average:.2f}, Grade: {grade}")
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------    
+# 3rd Question Answer
+# Creating is_prime function
+def is_prime(num):
+    # Checking whether num is prime or not
+    if num <= 1:
+        return False
+    for i in range(2, num+1):
+        if num % i == 0:
+            return False
+    return True 
+# Creating find_primes function
+def find_primes(start, end):
+    primes = []
+    for num in range(start, end + 1):
+        if is_prime(num):
+            primes.append(num)
+    return primes                           
+
+start = int(input("Enter the start of the range: "))
+end = int(input("Enter the end of the range: "))
+print(find_primes(start, end))
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------    
+# 4th Question Answer
+# count_characters creates a dictionary where keys are characters and values are the number of occurrences of each character in the string
+def count_characters(str):
+    # Initialize a dictionary to store character counts
+    char_count = {}
+    # Loop through each character in the string
+    for char in str:
+        # If the character is already in the dictionary, increment its count
+        if char in char_count:
+            char_count[char] += 1
+            # Otherwise, add the character to the dictionary with a count of 1
+        else:
+            char_count[char] = 1
+    return char_count
+# Prompt the user to enter a string
+str = input("Enter a string: ")
+# Call the count_characters function to get the character counts
+char_count = count_characters(str)
+# Print the character counts
+print(char_count)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------    
+# 5th Question Answer
+#  Use a while loop to generate the Fibonacci sequence and append each number to the list.
+def generate_fibonacci(n):
+    # Initialize the Fibonacci sequence
+    fibonacci_sequence = []
+    # Generate the Fibonacci sequence
+    a, b = 0, 1
+    # Append the first n numbers to the list
+    while len(fibonacci_sequence) < n:
+        # Append the current number to the list
+        fibonacci_sequence.append(a)
+        # Calculate the next number
+        a, b = b, a + b
+    return fibonacci_sequence
+
+# Take input from the user
+n = int(input("Enter the number of Fibonacci numbers to generate: "))
+# Generate and print the Fibonacci sequence
+fibonacci_list = generate_fibonacci(n)
+print(fibonacci_list)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------    

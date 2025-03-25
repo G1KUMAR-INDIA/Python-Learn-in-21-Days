@@ -1,0 +1,191 @@
+Day 5: In-Class Assignment Questions (Control Flow & Loops)
+1. Conditional Statements
+    •   1.1: Write a program to determine the grade of a student based on their marks (e.g., A for 90-100, B for 80-89, etc.). Use if-elif-else.
+    •   1.2: Create a program to check if a given number is within a specified range (e.g., between 10 and 20).
+    •   1.3: Implement a simple game of rock-paper-scissors using if-elif-else to determine the winner.
+2. Loops
+    •   2.1: Write a program to print the first 15 multiples of a given number using a for loop.
+    •   2.2: Create a program to find the sum of all odd numbers between 1 and 50 using a while loop.
+    •   2.3: Write a program to print the Fibonacci sequence up to a certain limit using a while loop.
+3. Loop Control Statements
+    •   3.1: Write a program to find the sum of all numbers in a list, excluding any negative numbers using the continue statement.
+    •   3.2: Create a program to search for a specific character in a string and print its index. Use the break statement to exit the loop once the character is found.
+4. Ternary Operator
+    •   4.1: Write a program to check if a given number is even or odd using the ternary operator.
+5. Case Statement (if available in your Python version)
+    •   5.1: Write a program to convert a month number (1-12) to its corresponding month name using the match-case statement.
+------------------------------------------------------------------------------------------------------
+Day 9 Alias Day 5 Assignment Answers:
+------------------------------------------------------------------------------------------------------
+# 1st Question(Conditional Statements) Answer:
+------------------------------------------------------------------------------------------------------
+# 1.1 Question Answer:
+# Creating Function for Grading Student Marks:
+def determine_grade(marks):
+    # Checking Grade of Studen Based on Percentage
+    if 90 <= marks <= 100:
+        return "A"
+    elif 80 <= marks < 90:
+        return "B"
+    elif 70 <= marks < 80:
+        return "C"
+    elif 60 <= marks < 70:
+        return "D"
+    elif 50 <= marks < 60:
+        return "E"
+    else:
+        return "F"
+
+marks = int(input("Enter marks: "))
+print(f"Grade: {determine_grade(marks)}")
+------------------------------------------------------------------------------------------------------
+# 1.2 Question Answer:
+# Enter Given Number In input
+num=int(input("Enter Given Number:"))
+lower_value=int(input("Enter Lower Value:"))
+upper_value=int(input("Enter Upper Value:"))
+# Checking Number is within Given range
+if num>=lower_value and num<=upper_value:
+    print("Number is within Given range")
+else:
+    print("Number is not within Given range")
+------------------------------------------------------------------------------------------------------
+# 1.3 Question Answer:
+# Importing Random Module
+import random
+# Creating Game Choice
+choices = ["rock", "paper", "scissors"]
+# Taking Player Choice from Input
+player_choice = input("Enter rock, paper, or scissors: ").lower()
+# Taking Computer Choice from Random Module
+computer_choice = random.choice(choices)
+# Checking Conditions
+if player_choice == computer_choice:
+    print("It's a tie!")
+elif player_choice == "rock" and computer_choice == "scissors":
+    print("You win!")
+elif player_choice == "paper" and computer_choice == "rock":
+    print("You win!") 
+else:
+    print("You lose!")          
+print(f"Computer chose: {computer_choice}")
+print(f"Player chose: {player_choice}")
+------------------------------------------------------------------------------------------------------
+# 2nd Question(Loops) Answers
+------------------------------------------------------------------------------------------------------
+# 2.1 Question Answers:
+# Enter Option Number in Input
+num = int(input("Enter a number: "))
+
+for i in range(1, 16):
+    print(f"{num} * {i} = {num * i}")
+------------------------------------------------------------------------------------------------------
+# 2.2 Question Answer:
+# Initially sum value taking as 0
+sum=0
+# Looping from 1 to 50
+# initializing i as 1
+i=1
+# checking if i is less than or equal to 50
+while i<=50:
+    # checking if i is odd
+    if i%2!=0:
+        # if i is odd Adding i to sum value
+        sum+=i
+    # incrementing i
+    i+=1
+# printing sum
+print(sum)
+------------------------------------------------------------------------------------------------------
+# 2.3 Question Answer:
+# Enter Limit of Fibonacci Sequence: 
+limit = int(input("Enter Limit of Fibonacci Sequence: "))
+# Initialize the Fibonacci sequence
+a, b = 0, 1
+print("Fibonacci Sequence:")
+# Generate and print the Fibonacci sequence up to the limit
+while a <= limit:
+    # Print the current value of a
+    print(a)
+    # Calculate the next value of a and b
+    a, b = b, a + b
+------------------------------------------------------------------------------------------------------
+# 3rd Question(Loop Control Statements) Answers:
+------------------------------------------------------------------------------------------------------
+# 3.1 Question Answer:
+# Initializing List
+list=[1,2,-3,4,-5,6]
+# Initializing Sum
+sum=0
+# Iterating i in List
+for i in list:
+    # Checking if i is less than 0
+    if i<0:
+        # Skipping if i is less than 0
+        continue
+    # Adding i to sum if i is not less than 0
+    sum+=i
+# Printing sum
+print(f"Sum of all numbers in list excluding negative numbers: {sum}")
+------------------------------------------------------------------------------------------------------
+# 3.2 Question Answer:
+# Taking String as Input
+Str=input("Enter String: ")
+
+# Taking Character as Input
+Char=input("Enter Character: ")
+
+# Searching for Character in String
+for i in range(len(Str)):
+    if Str[i]==Char:
+        print("Index of Character: ",i)
+        # break for single index or continue for multiple index
+        break
+------------------------------------------------------------------------------------------------------
+# 4th Question(Ternary Operator) Answer:
+------------------------------------------------------------------------------------------------------
+# 4.1 Question Answer:
+# Enter a number and check if it is even or odd
+num = int(input("Enter a number: "))
+# Check if the number is even
+result =  "even" if num % 2 == 0 else "odd"
+# Print the result
+print(f"The number {num} is {result}.")
+------------------------------------------------------------------------------------------------------
+# 5th Question(Case Statement) Answer:
+------------------------------------------------------------------------------------------------------
+# 5.1 Question() Answer:
+# Enter a month number (1-12):
+month_number = int(input("Enter a month number (1-12): "))
+# Convert month number to month name
+match month_number:
+    # Match each month number with its corresponding month name
+    case 1:
+        month_name = "January"
+    case 2:
+        month_name = "February"
+    case 3:
+        month_name = "March"
+    case 4:
+        month_name = "April"
+    case 5:
+        month_name = "May"
+    case 6:
+        month_name = "June"
+    case 7:
+        month_name = "July"
+    case 8:
+        month_name = "August"
+    case 9:
+        month_name = "September"
+    case 10:
+        month_name = "October"
+    case 11:
+        month_name = "November"
+    case 12:
+        month_name = "December"
+    case _:
+        month_name = "Invalid month number"
+# Print the month name
+print(f"The month name for month number {month_number} is: {month_name}")
+------------------------------------------------------------------------------------------------------

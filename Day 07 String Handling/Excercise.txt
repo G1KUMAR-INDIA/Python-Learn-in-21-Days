@@ -1,0 +1,64 @@
+Homework Questions for String Handling
+String Operations and Methods
+1.Basic Operations:
+    o   Write a program that takes two strings as input and performs the following operations:
+        ▪   Concatenate the strings.
+        ▪   Print the first string repeated 3 times.
+        ▪   Slice the second string from index 2 to 6.
+2.String Methods:
+    o   Take a user input string and perform the following operations:
+        ▪   Convert the string to title case.
+        ▪   Count the number of occurrences of the letter "a" (case insensitive).
+        ▪   Check if the string contains only alphabets.
+3.Manipulating Strings:
+    o   Write a program to take a sentence as input and:
+        ▪   Replace all spaces with underscores.
+        ▪   Print whether the sentence starts with the word "The".
+        ▪   Extract the last 5 characters of the string.
+4.Palindrome Check:
+    o   Write a program to check if a given string is a palindrome (reads the same forward and backward). Ignore case sensitivity.        
+String Formatting
+5.Using f-strings:
+    o   Write a program to take a name, age, and favorite color as input and display a message like: "Hi Alice! You are 30 years old, and your favorite color is blue."    
+6.Using .format() Method:
+    o   Create a program that takes two numbers as input and displays the following message using .format(): "The sum of {number1} and {number2} is {result}."
+7.Custom Table:
+    o   Write a program to display a table of items, quantities, and prices using f-strings or .format() for formatting:
+    o   Item    Quantity Price
+    o   Apples  10       $2.50
+    o   Bananas 5        $1.20
+    o   Oranges 8        $3.00    
+Creative String Manipulations
+8.Reverse Each Word:
+    o   Write a program to reverse each word in a given sentence while maintaining their order.
+        ▪   Input: "Hello World"
+        ▪   Output: "olleH dlroW"
+9.Count Vowels and Consonants:
+    o   Write a program to count the number of vowels and consonants in a given string. Ignore spaces and special characters.
+10.Remove Duplicates:
+    o   Write a program that removes duplicate characters from a string.
+        ▪   Input: "hello"
+        ▪   Output: "helo"
+11.Word Frequency:
+    o   Write a program to count the frequency of each word in a given sentence and display the results.
+12.Anagram Check:
+    o   Write a program to check if two strings are anagrams of each other (contain the same characters in a different order).
+        ▪   Example:
+            ▪   Input: "listen", "silent"
+            ▪   Output: True 
+Challenging Questions
+13.Password Strength Checker:
+    o   Write a program to check if a given password is strong. A strong password:
+        ▪   Is at least 8 characters long.
+        ▪   Contains both uppercase and lowercase letters.
+        ▪   Includes at least one numeric digit and one special character.
+14.Pig Latin Converter:
+    o   Write a program to convert a sentence into "Pig Latin." For each word:
+        ▪   Move the first letter to the end.
+        ▪   Add "ay" to the end.
+        ▪   Input: "Python is fun"
+        ▪   Output: "ythonPay siay unfay"                       
+15.Caesar Cipher:
+    o   Implement a simple Caesar cipher that shifts characters in a string by a fixed number. For example:
+        ▪   Input: "abc", shift = 2
+        ▪   Output: "cde"        

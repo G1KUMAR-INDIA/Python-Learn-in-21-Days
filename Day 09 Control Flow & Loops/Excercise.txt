@@ -1,0 +1,25 @@
+Day9-Exercise Questions for practice :
+Certainly, here are some homework exercise questions covering the Control Flow & Loops topics in Python:
+1. Conditional Statements
+    •   1.1: Write a program to check if a given number is even or odd.
+    •   1.2: Create a program to determine if a person is eligible to vote based on their age.
+    •   1.3: Write a program to find the largest of three numbers using nested if statements.
+    •   1.4: Implement a program to check if a year is a leap year using if-elif-else.
+    •   1.5: Write a program to assign grades to students based on their marks using if-elif-else.
+    •   1.6: Rewrite the leap year check program using the ternary operator.
+    •   1.7: (Optional) Implement a simple menu-driven program using if-elif-else (e.g., a calculator with options for addition, subtraction, etc.).
+2. Loops
+    •   2.1: Write a program to print the numbers from 1 to 10 using a for loop.
+    •   2.2: Create a program to calculate the factorial of a given number using a for loop.
+    •   2.3: Write a program to print the first 10 even numbers using a while loop.
+    •   2.4: Create a program to find the sum of all numbers in a list using a for loop.
+    •   2.5: Write a program to find the sum of all even numbers in a list using a for loop and the continue statement.
+    •   2.6: Write a program to search for a given number in a list using a for loop and the break statement.
+    •   2.7: Write a program to print the numbers from 1 to 10, and print "Found" if the number is 5, using the else clause in a for loop.
+3. Case Statement (Optional - Using match-case statement)
+    •   3.1: Write a program to convert a given day of the week (e.g., 1 for Monday, 2 for Tuesday) to its corresponding string representation using the match-case statement.
+Remember to:
+    •   Use meaningful variable names.
+    •   Write clear and concise code.
+    •   Include comments to explain your logic.
+    •   Test your code thoroughly.

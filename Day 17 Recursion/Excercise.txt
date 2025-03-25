@@ -1,0 +1,21 @@
+Day17- Practice Exercise Questions (3 Questions)
+1. Recursive Sum of Digits
+Write a recursive function sum_of_digits(n) that calculates the sum of digits of a given positive integer n.
+Example:
+print(sum_of_digits(1234)) # Output: 10 (1+2+3+4)
+print(sum_of_digits(987)) # Output: 24 (9+8+7)
+2️. Recursive Reverse of a String
+Write a recursive function reverse_string(s) that takes a string s and returns the reversed version of it using recursion.
+Example:
+print(reverse_string("hello")) # Output: "olleh"
+print(reverse_string("python")) # Output: "nohtyp"
+3. Recursive Tower of Hanoi Solution
+Write a recursive function tower_of_hanoi(n, source, auxiliary, target) to solve the Tower of Hanoi problem for n disks. Print the steps required to move all disks from the source rod to the target rod.
+Example Output for n = 3:
+Move disk 1 from A to C
+Move disk 2 from A to B
+Move disk 1 from C to B
+Move disk 3 from A to C
+Move disk 1 from B to A
+Move disk 2 from B to C
+Move disk 1 from A to C

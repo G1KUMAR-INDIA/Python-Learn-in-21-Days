@@ -1,0 +1,20 @@
+Here are five simple exercise questions on Modules, Packages, and Python Libraries for beginners:
+1. Importing and Using the math Module
+Write a Python program that imports the math module and:
+    •   Prints the value of π.
+    •   Calculates and prints the square root of 64.
+2. Using the random Module
+Write a Python program that imports the random module and:
+    •   Generates and prints a random integer between 1 and 50.
+    •   Selects and prints a random item from the list ["red", "blue", "green", "yellow"].
+3. Creating and Importing a Custom Module
+    •   Create a Python module named greetings.py that contains a function say_hello(name), which prints "Hello, [name]!".
+    •   Write another script that imports greetings.py and calls the function with your name.
+4. Using a Custom Module with Multiple Functions
+    •   Create a module math_operations.py with two functions:
+        o   add(a, b): Returns the sum of a and b.
+        o   multiply(a, b): Returns the product of a and b.
+    •   Write a script to import the module and call both functions with sample numbers.
+5. Finding Available Functions in a Module
+    •   Write a Python program that imports the math module.
+    •   Use dir(math) to print all available functions in the math module.

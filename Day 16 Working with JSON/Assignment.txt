@@ -1,0 +1,172 @@
+Day 16: Working with JSON - Daily Assignment & Test
+Daily Assignment Questions (2 Questions)
+1. Develop a Student Management System using JSON
+    Create a Python program that:
+     Stores student records (name, age, subjects, and grades) in a JSON file.
+     Provides options to add, update, delete, and retrieve student data.
+     Uses json.dump() to write data to a file and json.load() to read from the file.
+     Handles error cases (e.g., file not found, incorrect JSON format).
+    Test Cases:
+     Add a new student and save it to the JSON file.
+     Retrieve a student's record and display it.
+2. Convert JSON String to Dictionary and Modify Data
+     Given a JSON string, convert it into a Python dictionary, modify a specific keyvalue
+      pair, and print the updated JSON.
+    Test Cases:
+     Ensure the dictionary updates correctly.
+     Check if the modified JSON is valid.
+-------------------------------------------------------------------------------------------
+# Answers:
+-------------------------------------------------------------------------------------------
+# 1st Question Answer:
+import json
+import os
+
+DATA_FILE = 'students.json'
+
+# Load existing data or initialize an empty list
+def load_data():
+    try:
+        if not os.path.exists(DATA_FILE):
+            return []
+        with open(DATA_FILE, 'r') as file:
+            return json.load(file)
+    except json.JSONDecodeError:
+        print("Error: JSON file is corrupted or not in correct format.")
+        return []
+
+# Save data to JSON file
+def save_data(data):
+    with open(DATA_FILE, 'w') as file:
+        json.dump(data, file, indent=4)
+
+# Add a new student
+def add_student():
+    name = input("Enter student name: ")
+    age = int(input("Enter student age: "))
+    subjects = input("Enter subjects (comma-separated): ").split(",")
+    grades = input("Enter grades (comma-separated, same order as subjects): ").split(",")
+    
+    subjects = [sub.strip() for sub in subjects]
+    grades = [grade.strip() for grade in grades]
+    
+    student = {
+        "name": name,
+        "age": age,
+        "subjects": subjects,
+        "grades": grades
+    }
+
+    data = load_data()
+    data.append(student)
+    save_data(data)
+    print("✅ Student added successfully!")
+
+# Retrieve a student's record
+def retrieve_student():
+    name = input("Enter the student name to retrieve: ")
+    data = load_data()
+    for student in data:
+        if student["name"].lower() == name.lower():
+            print("\n📄 Student Record Found:")
+            print(json.dumps(student, indent=4))
+            return
+    print("❌ Student not found.")
+
+# Update a student's record
+def update_student():
+    name = input("Enter the student name to update: ")
+    data = load_data()
+    for student in data:
+        if student["name"].lower() == name.lower():
+            print("Enter new details (leave blank to keep old value):")
+            new_age = input(f"Age [{student['age']}]: ")
+            new_subjects = input(f"Subjects [{', '.join(student['subjects'])}]: ")
+            new_grades = input(f"Grades [{', '.join(student['grades'])}]: ")
+            
+            if new_age:
+                student['age'] = int(new_age)
+            if new_subjects:
+                student['subjects'] = [sub.strip() for sub in new_subjects.split(",")]
+            if new_grades:
+                student['grades'] = [g.strip() for g in new_grades.split(",")]
+            
+            save_data(data)
+            print("✅ Student record updated successfully!")
+            return
+    print("❌ Student not found.")
+
+# Delete a student's record
+def delete_student():
+    name = input("Enter the student name to delete: ")
+    data = load_data()
+    updated_data = [student for student in data if student["name"].lower() != name.lower()]
+    
+    if len(updated_data) == len(data):
+        print("❌ Student not found.")
+    else:
+        save_data(updated_data)
+        print("✅ Student deleted successfully!")
+
+# Menu
+def menu():
+    while True:
+        print("\n--- Student Management System ---")
+        print("1. Add Student")
+        print("2. Retrieve Student")
+        print("3. Update Student")
+        print("4. Delete Student")
+        print("5. Exit")
+        
+        choice = input("Enter your choice (1-5): ")
+        
+        if choice == '1':
+            add_student()
+        elif choice == '2':
+            retrieve_student()
+        elif choice == '3':
+            update_student()
+        elif choice == '4':
+            delete_student()
+        elif choice == '5':
+            print("👋 Exiting Student Management System. Goodbye!")
+            break
+        else:
+            print("⚠️ Invalid choice. Please select a valid option.")
+
+if __name__ == "__main__":
+    menu()
+-------------------------------------------------------------------------------------------
+# 2nd Question Answer
+import json
+
+# Sample JSON string
+json_str = '{"name": "R JEEVAN KUMAR", "age": 30, "subject": "Mathematics"}'
+
+print("🔸 Original JSON String:")
+print(json_str)
+
+# Step 1: Convert JSON string to Python dictionary
+try:
+    data = json.loads(json_str)
+    print("\n🔹 Converted to Dictionary:")
+    print(data)
+except json.JSONDecodeError:
+    print("❌ Invalid JSON string!")
+    exit()
+
+# Step 2: Modify a specific key-value pair
+# Let's update the age to 20 and subject to "Science"
+data['age'] = 20
+data['subject'] = "Science"
+
+print("\n✏️ Modified Dictionary:")
+print(data)
+
+# Step 3: Convert back to JSON string
+try:
+    updated_json_str = json.dumps(data, indent=4)
+    print("\n✅ Updated JSON String (Valid Format):")
+    print(updated_json_str)
+except TypeError as e:
+    print(f"❌ Error converting dictionary to JSON: {e}")

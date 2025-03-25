@@ -1,0 +1,46 @@
+Here are some exercise questions for candidates on the topic of "Lists" in Python, suitable for homework:
+Basic:
+    1.Create a list of your favorite movies.
+    2.Create a list of integers from 1 to 10.
+    3.Create a list of the first 5 letters of the alphabet.
+    4.Create an empty list and then add 3 different data types to it (e.g., integer, string, boolean).
+    5.Create a list of 5 colors and print the second and fourth colors.
+Intermediate:
+    1.Given a list of numbers, find the sum of all the numbers.
+    2.Given a list of strings, concatenate all the strings together.
+    3.Given a list of numbers, find the largest and smallest numbers.
+    4.Given a list of names, sort the list in alphabetical order.
+    5.Given a list of numbers, remove all duplicates from the list.
+Advanced:
+    1.Implement a function to reverse a list without using the built-in reverse() method.
+    2.Implement a function to find the second largest element in a list.
+    3.Given two lists, create a new list that contains only the elements that are common to both lists.
+    4.Given a list of numbers, create a new list that contains only the even numbers.
+    5.Implement a simple "to-do" list application using lists. Allow users to add, remove, and view tasks.
+Tips for the Instructor:
+    •   Adjust difficulty: Tailor the exercises to the skill level of your candidates.
+    •   Provide hints: Offer hints or guidance if candidates are stuck.
+    •   Encourage creativity: Allow for some creative problem-solving and different approaches to the exercises.
+    •   Review solutions: Discuss the solutions in class and provide feedback to the candidates.
+Example of an Exercise with a Solution:
+Exercise:
+Given a list of numbers, find the sum of all the numbers.
+Solution:
+    Python
+    def sum_of_numbers(numbers):
+        """
+        Calculates the sum of all numbers in a list.
+        Args:
+        numbers: A list of numbers.
+        Returns:
+        The sum of all numbers in the list.
+        """
+        total = 0
+        for number in numbers:
+        total += number
+        return total
+    # Example usage:
+    my_list = [1, 2, 3, 4, 5]
+    result = sum_of_numbers(my_list)
+    print("Sum of numbers:", result) # Output: Sum of numbers: 15
+I hope these exercises are helpful for your candidates!

@@ -1,0 +1,120 @@
+Day 10: Strings - Assignment
+Assignment Questions
+    1.Concatenation and Slicing:
+        o   Write a program that takes three strings as input:
+        ▪   Concatenate the first two strings.
+        ▪   Slice the concatenated string to include only characters from index 2 to 8 (inclusive).
+        ▪   Print both the concatenated and sliced strings.
+    2.Case Conversion:
+        o   Write a program to take a string and:
+        ▪   Convert it to uppercase.
+        ▪   Convert it to lowercase.
+        ▪   Swap the case of all characters.
+        ▪   Check if the string is in title case.
+    3.String Search and Replace:
+    o   Write a program to take a sentence and:
+    ▪   Search for the word "Python" in the sentence.
+    ▪   Replace all occurrences of "Python" with "Java."
+    ▪   Print the modified sentence.
+    4.Count Specific Characters:
+    o   Write a program to count:
+    ▪   The number of vowels in a given string.
+    ▪   The number of consonants in the string.
+    ▪   The number of spaces in the string.
+------------------------------------------------------------------------------------------------------
+# Answers:
+# 1st Question Answer:
+# Taking Three Strings from Input
+Str1=input("Enter First String: ")
+Str2=input("Enter Second String: ")
+Str3=input("Enter Third String: ")
+
+print(Str1,Str2,Str3)
+
+# Concatenate the first two strings
+Concatenated_Str = Str1 + Str2
+print("Concatenated String:",   Concatenated_Str)
+
+# Slice from index 2 to 8 (inclusive)
+Sliced_Str = Concatenated_Str[2:9]
+print("Sliced String (index 2 to 8):", Sliced_Str)
+
+# Example Output:
+# Enter First String: R 
+# Enter Second String: JEEVAN
+# Enter Third String: KUMAR
+# R  JEEVAN KUMAR
+# Concatenated String: R JEEVAN
+# Sliced String (index 2 to 8): JEEVAN
+------------------------------------------------------------------------------------------------------
+# 2nd Question Answer:
+# Taking String as Input
+Str=input("Enter String: ")
+print("Entered String: ",Str)
+
+# Uppercase of Input String
+print("Uppercase of Input String: ",Str.upper())
+
+# Lowercase of Input String
+print("Lowercase of Input String: ",Str.lower())
+
+# Swap the case of all characters
+print("Swap case of Input String: ",Str.swapcase())
+
+# Given String is in Title Case
+print("Title case of Input String: ",Str.istitle())
+
+# Example Output:
+# Enter String: R Jeevan Kumar
+# Entered String:  R Jeevan Kumar
+# Uppercase of Input String:  R JEEVAN KUMAR
+# Lowercase of Input String:  r jeevan kumar
+# Swap case of Input String:  r jEEVAN kUMAR
+# Title case of Input String:  True
+------------------------------------------------------------------------------------------------------
+# 3rd Question Answer:
+# String Search and Replace
+# Enter Sentence as String Input
+sentence=input("Enter Sentence: ")
+# print("Entered Sentence: ",sentence)
+
+# Searching the word "Python" in the Sentence
+if "Python" in sentence:
+  print("Word Python is found in Entered Sentence.")
+else:
+  print("Word Python is not found in Entered Sentence.")
+
+# Replacing all occurrences of "Python" with "Java."
+modified_sentence = sentence.replace("Python", "Java")
+
+# Printing the modified sentence
+print(modified_sentence)
+
+#  Sample Output
+# Enter Sentence: The best programming languages to learn in 2025 include Python, JavaScript, Java, C#, C++, PHP, Ruby, Swift, R, and SQL
+# Word Python is found in Entered Sentence.
+# The best programming languages to learn in 2025 include Java, JavaScript, Java, C#, C++, PHP, Ruby, Swift, R, and SQL
+------------------------------------------------------------------------------------------------------
+# 4th Question Answer:
+# Giving String in Input
+Str=input("Enter a String: ")
+vowels = "aeiouAEIOU"
+consonants = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
+
+# Counting no. of Vowels in String
+vowel_count = sum(1 for char in Str if char in vowels)
+print("No. of Vowels in given String:{}".format(vowel_count))
+
+# Counting no. of Consonants in String
+consonant_count = sum(1 for char in Str if char in consonants)
+print("No. of Consonants: ",consonant_count)
+
+# Counting Spaces in String
+space_count = Str.count(" ")
+print("No. of Spaces in a String: ",space_count)
+
+#  Sample Output
+# Enter a String: The best programming languages to learn in 2025 include Python, JavaScript, Java, C#, C++, PHP, Ruby, Swift, R, and SQL
+# No. of Vowels in given String:25
+# No. of Consonants:  59
+# No. of Spaces in a String:  19

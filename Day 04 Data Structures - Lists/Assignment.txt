@@ -1,0 +1,29 @@
+Assignment for DSA--List
+1. Create a list named fruits containing the following elements:
+     "apple", "banana", "orange", "mango".
+2. Using the append() method, add "grape" to the end of the fruits list.
+3. Using the remove() method, remove "banana" from the fruits list.
+4. Using the pop() method, remove and store the last element of the fruits list in a variable named last_fruit.
+5. Using slicing, create a new list named first_two_fruits containing the first two elements of the fruits list.
+Ans:
+# Answer for 1st Question
+fruits=["apple", "banana", "orange", "mango"]
+print("List of All Fruits:",fruits)
+
+# Answer for 2nd Question
+fruits.append("grape")
+print("List of Updated Fruits:",fruits)
+
+# Answer for 3rd Question
+fruits.remove("banana")
+print("List of Updated Fruits:",fruits)
+
+# Answer for 4th Question
+last_fruit=fruits.pop()
+print("List of Updated Fruits:",fruits)
+print(last_fruit)
+    
+# Answer for 5th Question
+first_two_fruits=fruits[:2]
+print("List of Updated Fruits:",fruits)
+print("List of first two fruids:",first_two_fruits)

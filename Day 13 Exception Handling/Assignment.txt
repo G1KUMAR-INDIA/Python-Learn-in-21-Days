@@ -1,0 +1,89 @@
+1. Number Squaring with Exception Handling
+    Task:
+    •   Write a Python program that:
+        o   Asks the user to enter a number.
+        o   Squares the number and prints the result.
+        o   Handles the following exceptions:
+            ▪   ValueError if the input is not a valid number.
+            ▪   TypeError in case of unexpected issues.
+    Example Output:
+    Enter a number: 5
+    Square of 5 is 25.
+    Enter a number: hello
+    Error: Invalid input! Please enter a number.
+2. Even/Odd Number Checker with Exception Handling
+Task:
+    •   Write a Python program that:
+        o   Asks the user to enter a number.
+        o   Checks whether the number is even or odd.
+        o   Handles the following exceptions:
+            ▪   ValueError if the input is not a valid number.
+    Example Output:
+    Enter a number: 8
+    8 is an even number.
+    Enter a number: abc
+    Error: Invalid input! Please enter a valid number.
+3. Reverse String with Exception Handling
+Task:
+    •   Write a Python program that:
+        o   Asks the user to enter a string.
+        o   Reverses and prints the string.
+        o   Handles the following exceptions:
+            ▪   ValueError if the input is empty.
+    Example Output:
+    Enter a string: Python
+    Reversed string: nohtyP
+    Enter a string:
+    Error: Input cannot be empty!
+-----------------------------------------------------------------------------------------------
+# Answers:
+-----------------------------------------------------------------------------------------------
+# 1st Question Answer:
+# Creating a program to square a number with exception handling
+try:
+    x=int(input("Enter the Number: "))
+    print("Squaring given Number: ", x**2)
+    # Instead of using print(f"Square of {x} is {x**2}"), if 2 replace with "2", Type error will occur  
+# creating Exception Handling
+# handling ValueError
+except ValueError as ve:
+    print("Error: Invalid input! Please enter a number.")
+    with open("error_log.txt","a") as file:
+        file.write(f"ValueError: {ve}\n")
+ # handling TypeError       
+except TypeError as te:
+    print("Error: Type error occurred. Check your operation.")
+    with open("error_log.txt","a") as file:
+        file.write(f"TypeError: {te}\n")
+-----------------------------------------------------------------------------------------------
+# 2nd Question Answer:
+# Creating a python program to check if a number is even or odd with exception handling
+try:
+    num = int(input("Enter a number: "))
+    if num % 2 == 0:
+        print(f"{num} is an even number.")
+    else:
+        print(f"{num} is an odd number.")
+except ValueError as ve:
+    print("Error: Invalid input! Please enter a valid number.")
+    with open("error_log.txt","a") as file:
+        file.write(f"ValueError: {ve}\n")
+-----------------------------------------------------------------------------------------------
+# 3rd Question Answer:
+# String Reversal with Exception Handling
+
+try:
+    user_input = input("Enter a string to reverse: ")
+    
+    # Check if input is actually a string (redundant in normal use, but good for demo)
+    if not isinstance(user_input, str):
+        raise TypeError("Input is not a valid string.")
+    
+    reversed_string = user_input[::-1]
+    print(f"Reversed string: {reversed_string}")
+    
+except TypeError as te:
+    print("Error: Type error occurred while reversing the string.")
+    with open("error_log.txt", "a") as file:
+        file.write(f"TypeError: {te}\n")
+-----------------------------------------------------------------------------------------------        

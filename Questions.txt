@@ -44,6 +44,12 @@ What is Abstraction Class?
 
 What is Polymorphism?
 
+What is json?
+
+How to run CRUD Operation with json in python?
+
+
+
 
 
 
