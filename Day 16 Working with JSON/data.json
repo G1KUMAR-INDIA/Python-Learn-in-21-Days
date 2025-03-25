@@ -1,0 +1,15 @@
+{
+    "name": "John",
+    "age": 30,
+    "skills": [
+        "Python",
+        "Java",
+        "C++"
+    ],
+    "address": {
+        "street": "KVS STREET",
+        "city": "Palamaneru",
+        "state": "Andhra Pradesh",
+        "pincode": 517408
+    }
+}

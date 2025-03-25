@@ -1,0 +1,28 @@
+What is json?
+    Java Script Object Notation, it is very light weight data format.
+    {
+    "name":"G1Kumar",
+    "age":30,
+    "city":"Palamaneru",
+    "isEmployed":True,
+    "skills":["Python","Java","C++"],
+    "address":{
+        "street":"KVS STREET",
+        "city":"Palamaneru",
+        "state":"Andhra Pradesh",
+        "pincode":517408
+    }
+
+    }
+    # Json type             python equivalent
+    # object                dictionary
+    # array                 list
+    # string                string
+    # number(integer)       int
+    # number(real)          float
+    # true                  True
+    # false                 False
+    # null                  None
+
+    # json.dump()           json.load 
+
